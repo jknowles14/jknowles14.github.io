@@ -1,8 +1,142 @@
-
 * {
   box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
+}
+
+.topnav {
+  background-color: #39858F;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  float: right;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #369C6F;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 1rem 2rem;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*** typography ***/
+p {
+  font-size: 1.8rem;
+}
+
+ul {
+  font-size: 1.8rem;
+}
+
+li {
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+article.hero {
+  line-height: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 5rem;
+}
+
+article.teal {
+  background-color: #39858F;
+  color: #FFFFFF;
+  line-height: 2.2rem;
+  padding: 3rem;
+}
+
+article.tealgreen {
+  background-color: #3AA695;
+  color: #FFFFFF;
+  line-height: 2.2rem;
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+article.white {
+  background-color: #FFFFFF;
+  line-height: 2.2rem;
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+article.title {
+  background-color: #39858F;
+  color: #FFFFFF;
+  line-height: 4rem;
+  margin-top: 1rem;
+  padding-right: 3rem;
+  padding-left: 1rem;
+}
+
+article.hero {
+  line-height: 2.2rem;
+  margin-top: 3rem;
+  padding-right: 3rem;
+  padding-left: 1rem;
+}
+
+.header {
+  padding: 3rem;
+}
+
+/*** structure ***/
+.container {
+  background-color: white;
+  float: center;
+  padding: 3rem;
+  width: auto;
+}
+
+section.bottom {
+  background-color: #39858F;
+  bottom: 0;
+  color: white;
+  font-size: 2rem;
+  left: 0;
+  line-height: 120%;
+  margin-top: .5rem;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  font-size: 1.5rem;
+  height: inherit;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 1000rem) {
+  .container {
+    width: 580px;
+  }
 }

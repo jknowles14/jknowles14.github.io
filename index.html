@@ -4,75 +4,81 @@
 <head>
   <title> Portfolio | Julie Knowles </title>
   <meta name="viewport" content="width=device-width, intitial-scale=1">
- <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
   <!-- Font Awesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
+<div class="topnav">
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a class="active" href="index.html">Home</a>
+</div>
 
 <body>
   <header>
-      <h1> Hey there! I’m Julie</h1>
-      <p class="slogan">A Denver, CO based UX/UI designer passionate about creating intuitive experiences founded on research and strategy. </p>
-    </header>
+    <article class="hero">
+    <h1> Hey there!
+    I’m Julie</h1>
+    <p class="slogan">A Denver, CO based UX/UI designer passionate about creating intuitive experiences founded on research and strategy. </p>
+</article>
+  </header>
+
+  <div class="container">
+
+
+    <main>
+      <section>
+      <article class="stacks">
+          <a href="project.html">
+            <img src="../images/stacks-computer.png" alt="Stacks screenshot" />
+          </a>
+        </article>
+      </section>
+
+      <section>
+        <article class="Solo">
+          <img src="../images/mobileSOLO.jpg" alt="Solo Project screenshot" />
+        </article>
+      </section>
+
+      <section class="work">
+        <article class="white">
+          <h2>Workwise</h2>
+          <p> I enjoy working to improve the way we interact with our devices and to make our daily tasks simpler.</p>
+        </article>
+      </section>
+
+      <section class="fun">
+        <article class="teal">
+          <h2>Fun Facts</h2>
+          <p>I'm a somnambulist - a sleep walker, especially after watching a scary movie. I've been known to shut the bedroom door to keep the zombies out. I love all types of movies, cat naps with my cat, Halloween,
+            yoga, and hiking. </p>
+        </article>
+        <div>
+          <img src="../images/Union-arrow.png" alt="arrow" />
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
-<main>
-  <div class="Stacks">
-    <div>
-      <img src="../images/stacks computer.png" alt="Stacks screenshot" />
-    </div>
-    <div class="Stacks about">
-      <p>Stacks is a cloud storage prototype that allows users to share, organize, and save documents and images. Users have the ability to share with links or by email, password protects links
-        and tag documents for easy searching. </p>
-    </div>
-  </div>
-
-  <div class="Solo Project">
-    <div>
-      <img src="../images/mobileSOLO.jpg" alt="Solo Project screenshot" />
-    </div>
-    <div class="Solo About">SOlO PROJECT TBD Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nUt enim ad minim veniam. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n Ut enim ad minim veniam, quis nostrud.</div>
-  </div>
-
-  <div class="Work">
-    <div>
-      <h2>Workwise</h2>
-    </div>
-    <div class="Work about">I enjoy working to improve the way we interact with our devices and to make our daily tasks simpler.
-    </div>
-  </div>
-
-  <div class="Fun">
-    <div>
-      <h2>Fun Facts</h2>
-    </div>
-    <div class="Fun Facts">
-      <p>I'm a somnambulist - a sleep walker, especially after watching a scary movie. I've been known to shut the bedroom door to keep the zombies out. I love all types of movies, cat naps with my cat, Halloween,
-        yoga, and hiking. </p>
-    </div>
-    <div>
-      <img src="../images/arrow.png" alt="arrow" />
-    </div>
-  </div>
-</main>
 <footer>
+<section class="bottom">
+
+
   <h2> Let's Connect </h2>
-  <ul class="mdl-mini-footer__link-list">
-    <li>
+  <div id="contact">
+  <article class="mdl-mini-footer__link-list">
       <a href="https://www.linkedin.com/in/julie-knowles/">
         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/jknowles14/jknowles14.github.io.git">
+      </a><a href="https://github.com/jknowles14/jknowles14.github.io.git">
         <i class="fa fa-github-square" aria-hidden="true"></i>
-      </a>
-    <li>
-      <a href="mailto:julieanne.m.knowles@gmail.com">
+      </a><a href="mailto:julieanne.m.knowles@gmail.com">
         <i class="fa fa-envelope-square" aria-hidden="true"></i>
-    </li>
-  </ul>
+  </article>
+</div>
+</section>
 </footer>
 
 </html>
