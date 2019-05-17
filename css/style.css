@@ -1,9 +1,10 @@
-* {
+{
   box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
+  font-family: 'Merriweather sans'
 }
 
 .topnav {
@@ -17,147 +18,335 @@ html {
   color: #f2f2f2;
   font-size: 1.5rem;
   float: right;
+  justify-content: left;
   padding: 1rem 1rem;
   text-align: right;
-  text-decoration: none;
-  width: 10rem;
-}
-
-.button {
-  background-color: #369C6F;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 2rem;
-  margin: 1rem 2rem;
-  padding: 2rem;
-  text-align: center;
   text-decoration: none;
 }
 
 /*** typography ***/
-
-
 p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: 'Merriweather Sans';
+  line-height: 2.5rem;
 }
 
-ul, {
-  font-size: 1.8rem;
-}
-
-li {
+ul, li {
   font-size: 1.8rem;
 }
 
 h1 {
+  color: #3AA695;
   font-family: "Yeseva One";
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: 8rem;
   font-style: normal;
   font-variant: normal;
 }
 
-
-
 h2 {
   font-family: "Merriweather sans";
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 3rem;
 }
 
-article.hero {
+h3 {
+  font-family: "Merriweather sans";
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.myprojects, .name {
+  background-color: #39858F;
+  color: #FFF1F1;
+  font-family: "Merriweather sans";
+  font-size: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 40rem;
+}
+
+.hero-text {
   line-height: 2.2rem;
   margin-top: 3rem;
-  padding-right: 3rem;
-  padding-left: 1rem;
+  padding-top: 20rem;
+  padding-left: 5rem;
 }
 
-article.teal {
+.hero-image {
+  width: 100%;
+  background-image: url("/images/jkcrop.png");
+  /* Used if the image is unavailable */
+  height: 70rem;
+  /* You must set a specified height */
+  background-position: left;
+  /* Center the image */
+  background-repeat: no-repeat;
+}
+
+/* project */
+.title {
   background-color: #39858F;
-  color: #FFFFFF;
-  line-height: 2.2rem;
-  padding: 3rem;
+  color: #FFF1F1;
+  font-family: "Merriweather sans";
+  font-size: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 40rem;
 }
 
-article.tealgreen {
+.stackscase {
+  float: left;
+  width: 50%;
+  margin-bottom: 10rem;
+}
+
+.intro {
+  padding: 3rem;
+  float: left;
+  width: 46%;
+}
+
+.problem, .solution {
   background-color: #3AA695;
-  color: #FFFFFF;
+  color: #FFF1F1;
+  float: right;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  width: 40%;
+}
+
+.button {
+  border: 2px solid #3AA695;
+  color: #3AA695;
+  cursor: pointer;
+  /* display: inline-block; */
+  float: right;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-right: 5rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 51rem;
+}
+
+.teal {
+  line-height: 2.2rem;
+  padding: 3rem;
+}
+
+.tealgreen {
   line-height: 2.2rem;
   margin-top: 1rem;
   padding: 3rem;
 }
 
-article.white {
-  background-color: #FFFFFF;
+.whitep {
+  float: none;
   line-height: 2.2rem;
-  margin-top: 1rem;
-  padding: 3rem;
+  margin-top: 2rem;
+  width: 60%;
 }
 
-article.title {
-  background-color: #39858F;
-  color: #FFFFFF;
+.title {
   line-height: 4rem;
   margin-top: 1rem;
   padding-right: 3rem;
   padding-left: 1rem;
-}
-
-.header {
-  padding: 3rem;
 }
 
 /*** structure ***/
 .container {
   background-color: white;
   float: center;
-  padding: 3rem;
   width: auto;
-}
-
-section.bottom {
-  background-color: #39858F;
-  bottom: 0;
-  color: white;
-  font-size: 2rem;
-  left: 0;
-  line-height: 120%;
-  margin-top: .5rem;
-  padding: 1.5rem 1.5rem;
-  text-align: center;
-  width: 100%;
 }
 
 img {
   font-size: 1.5rem;
   height: inherit;
   max-width: 100%;
-  padding: 1rem;
+  /* padding: ; */
 }
 
 .stackstext {
-  float: right;
+  float: left;
+  width: 40%;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.projectbutton {
+  border: 2px solid #3AA695;
+  color: #3AA695;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 30rem;
 }
 
 .stacks {
   float: right;
+  width: 50%;
+  margin-bottom: 10rem;
 }
 
-@media screen (max-width: 500px) {
-  .hero {
-    line-height: 3rem;
-    padding: 50px;
+.solo {
+  float: left;
+  width: 50%;
+  margin-top: 10rem;
+}
+
+.solotext {
+  float: right;
+  width: 40%;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.projectbutton, .solobutton {
+  border: 2px solid #3AA695;
+  color: #3AA695;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 30rem;
+}
+
+/* ABOUT */
+contain1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.beads {
+  flex: 2;
+  margin-bottom: 10rem;
+  flex-basis: 40%;
+}
+
+.one {
+  background-color: yellow;
+  flex: 1;
+  flex-basis: 40%;
+}
+
+.story {
+  flex: 1;
+  /* width: 58rem;
+  margin-top: 3rem; */
+}
+
+.college {
+  background-color: blue;
+  flex: 1;
+  /* width: 40%;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem; */
+}
+
+.nonprofits {
+  background-color: #3AA695;
+  flex: 1;
+  padding: 3rem;
+}
+
+.love {
+  background-color: red;
+  flex: 1;
+  padding: 3rem;
+}
+
+.river {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+contain2 {
+  display: flex;
+  flex-direction: row;
+}
+
+contain3 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* bottom  */
+.bottom {
+  bottom: 0;
+  float: right;
+  font-size: 3rem;
+  padding-left: 15rem;
+  padding-right: 3rem;
+  padding-top: 10rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+@media screen and (max-width: 575px) {
+  .stacks, .beads, .storyboard, .stackscase {
+    float: center;
+    width: 100%;
+    margin-top: 1rem;
   }
 
-  .slogan {
+  .solo, .one, .college, .nonprofits, .love {
+    float: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    float: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .problem, .solution {
+    float: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    width: 8rem;
+  }
+
+  .stackstext {
     display: none;
   }
-}
 
-@media screen and (min-width:991px) {}
+  .projectbutton {
+    display: none;
+  }
 
-@media screen and (min-width:1199px) {}
+  .solotext {
+    display: none;
+  }
+
+  /* @media screen and (min-width:500px) {
+   .bottom-image {
+    height: 15%;
+  }
+} */
