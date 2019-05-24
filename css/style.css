@@ -10,18 +10,20 @@ html {
 .topnav {
   background-color: #39858F;
   overflow: hidden;
-  font-family: 'Merriweather sans'
+  font-family: 'Merriweather sans';
+  float: right;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   color: #f2f2f2;
-  font-size: 1.5rem;
+  font-size: 2rem;
   float: right;
-  justify-content: left;
-  padding: 1rem 1rem;
-  text-align: right;
-  text-decoration: none;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
 }
 
 /*** typography ***/
@@ -64,14 +66,13 @@ h3 {
   font-size: 3rem;
   padding-left: 2rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   width: 40rem;
 }
 
 .hero-text {
   line-height: 2.2rem;
-  margin-top: 3rem;
   padding-top: 20rem;
   padding-left: 5rem;
 }
@@ -80,7 +81,7 @@ h3 {
   width: 100%;
   background-image: url("/images/jkcrop.png");
   /* Used if the image is unavailable */
-  height: 70rem;
+  height: 63rem;
   /* You must set a specified height */
   background-position: left;
   /* Center the image */
@@ -229,50 +230,49 @@ img {
 }
 
 /* ABOUT */
-contain1 {
-  display: flex;
-  flex-direction: column;
+/* .space{
+padding: 25rem;
+} */
+.hero-about {
+  width: 50%;
+  float: right;
+}
+
+.JKback {
+  height: 40rem;
 }
 
 .beads {
-  flex: 2;
-  margin-bottom: 10rem;
-  flex-basis: 40%;
+  float: left;
+  width: 50%;
 }
 
 .one {
-  background-color: yellow;
-  flex: 1;
-  flex-basis: 40%;
+  padding: 4rem;
+  float: right;
+  width: 40%;
 }
 
 .story {
-  flex: 1;
-  /* width: 58rem;
-  margin-top: 3rem; */
+  float: right;
+  width: 50%;
 }
 
 .college {
-  background-color: blue;
-  flex: 1;
-  /* width: 40%;
-  margin-right: 30px;
-  margin-bottom: 20px;
-  padding-left: 5rem;
-  padding-bottom: 5rem;
-  padding-right: 5rem;
-  padding-top: 2rem; */
+  float: right;
+  padding: 4rem;
+  width: 40%;
 }
 
 .nonprofits {
   background-color: #3AA695;
-  flex: 1;
+  /* flex: 1; */
   padding: 3rem;
 }
 
 .love {
   background-color: red;
-  flex: 1;
+  /* flex: 1; */
   padding: 3rem;
 }
 
@@ -281,17 +281,14 @@ contain1 {
   margin-bottom: 5rem;
 }
 
-contain2 {
-  display: flex;
-  flex-direction: row;
-}
-
-contain3 {
-  display: flex;
-  flex-direction: row;
-}
-
 /* bottom  */
+.arrow {
+  float: right;
+  margin-top: -400px;
+  position: relative;
+  z-index: 1;
+}
+
 .bottom {
   bottom: 0;
   float: right;
@@ -299,13 +296,14 @@ contain3 {
   padding-left: 15rem;
   padding-right: 3rem;
   padding-top: 10rem;
+  position: relative;
   text-align: center;
   padding-bottom: 2rem;
-  position: relative;
+  z-index: 500;
 }
 
 @media screen and (max-width: 575px) {
-  .stacks, .beads, .storyboard, .stackscase {
+  .stacks, .beads, .story, .stackscase {
     float: center;
     width: 100%;
     margin-top: 1rem;
