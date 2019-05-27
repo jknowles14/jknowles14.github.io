@@ -283,8 +283,8 @@ padding: 25rem;
 
 /* bottom  */
 .arrow {
-  float: right;
-  margin-top: -400px;
+  float: left;
+  /* margin-top: -400px; */
   position: relative;
   z-index: 1;
 }
@@ -296,9 +296,15 @@ padding: 25rem;
   padding-left: 15rem;
   padding-right: 3rem;
   padding-top: 10rem;
-  position: relative;
+
   text-align: center;
   padding-bottom: 2rem;
+
+}
+
+.contact{
+  float: right; 
+  position: relative;
   z-index: 500;
 }
 
