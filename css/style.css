@@ -1,10 +1,10 @@
-{
+* {
   box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
-  font-family: 'Merriweather sans'
+  font-family: 'Merriweather sans';
 }
 
 .topnav {
@@ -16,7 +16,7 @@ html {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  color: #f2f2f2;
+  color: #FFF1F1;
   font-size: 2rem;
   float: right;
   justify-content: center;
@@ -27,14 +27,10 @@ html {
 }
 
 /*** typography ***/
-p {
+p, ul {
   font-size: 2rem;
   font-family: 'Merriweather Sans';
-  line-height: 2.5rem;
-}
-
-ul, li {
-  font-size: 1.8rem;
+  line-height: 3rem;
 }
 
 h1 {
@@ -50,6 +46,7 @@ h1 {
 h2 {
   font-family: "Merriweather sans";
   font-size: 3rem;
+  line-height: 4rem;
 }
 
 h3 {
@@ -89,11 +86,18 @@ h3 {
 }
 
 /* project */
+.space {
+  padding: 10rem;
+}
+
 .title {
   background-color: #39858F;
   color: #FFF1F1;
+  float: left;
   font-family: "Merriweather sans";
   font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 3rem;
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -101,66 +105,136 @@ h3 {
   width: 40rem;
 }
 
-.stackscase {
+.stacks-pic {
   float: left;
-  width: 50%;
-  margin-bottom: 10rem;
+  width: 40%;
 }
 
 .intro {
+  clear: left;
+  margin-left: 1rem;
   padding: 3rem;
-  float: left;
-  width: 46%;
+  float: right;
+  width: 50%;
 }
 
 .problem, .solution {
   background-color: #3AA695;
+  clear: left;
   color: #FFF1F1;
   float: right;
-  margin-right: 5rem;
-  margin-top: 1rem;
-  padding: 2rem;
-  width: 40%;
+  height: 26rem;
+  margin: 3rem;
+  padding: 3rem;
+  width: 45%;
 }
 
-.button {
+.buttona {
   border: 2px solid #3AA695;
+  clear: both;
   color: #3AA695;
   cursor: pointer;
-  /* display: inline-block; */
-  float: right;
+  float: left;
   font-size: 2rem;
   margin-top: 2rem;
-  margin-right: 5rem;
+  margin-left: 5rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
   width: 51rem;
 }
 
-.teal {
-  line-height: 2.2rem;
+.button {
+  border: 2px solid #3AA695;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3AA695;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 40rem;
+}
+
+.buttons {
+  margin: 3rem;
+}
+
+.competitive {
+  clear: right;
+  float: left;
+  margin-top: 5rem;
+  padding: 3rem;
+  width: 50%;
+}
+
+.competitive-pic {
+  clear: right;
+  float: right;
+  padding: 3rem;
+  width: 30%;
+}
+
+.box {
+  background-color: #3AA695;
+  clear: right;
+  color: #FFF1F1;
+  float: left;
+  height: 40rem;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  width: 27%;
   padding: 3rem;
 }
 
-.tealgreen {
-  line-height: 2.2rem;
-  margin-top: 1rem;
+.usersurvey::after {
+  display: table;
+}
+
+.personas-pic {
+  float: left;
+  padding-top: 6rem;
+  width: 45%;
+}
+
+.processpic, .flow-pic, .changes, .moodboard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+.userp {
+  float: right;
+  margin-top: 5rem;
   padding: 3rem;
+  width: 50%;
 }
 
-.whitep {
-  float: none;
-  line-height: 2.2rem;
-  margin-top: 2rem;
-  width: 60%;
+.flow, .high, .testing, .brand, .prototype-testing {
+  display: inline-block;
+  padding: 4rem;
 }
 
-.title {
-  line-height: 4rem;
-  margin-top: 1rem;
-  padding-right: 3rem;
-  padding-left: 1rem;
+.users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting {
+  padding-bottom: 10rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 10rem;
+}
+
+.conclusion {
+  background-color: #3AA695;
+  color: #FFF1F1;
+  display: inline-block;
+  padding-bottom: 10rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 10rem;
+  margin: 1rem;
 }
 
 /*** structure ***/
@@ -204,9 +278,10 @@ img {
 }
 
 .solo {
+  clear: left;
   float: left;
   width: 50%;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .solotext {
@@ -230,9 +305,6 @@ img {
 }
 
 /* ABOUT */
-/* .space{
-padding: 25rem;
-} */
 .hero-about {
   width: 50%;
   float: right;
@@ -244,36 +316,45 @@ padding: 25rem;
 
 .beads {
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
 .one {
-  padding: 4rem;
-  float: right;
-  width: 40%;
-}
-
-.story {
+  padding: 5rem;
   float: right;
   width: 50%;
 }
 
-.college {
+.story {
+  clear: right;
   float: right;
-  padding: 4rem;
-  width: 40%;
+  margin-top: 5rem;
+  width: 45%;
+}
+
+.college {
+  clear: left;
+  float: left;
+  margin-top: 5rem;
+  padding: 5rem;
+  width: 50%;
+}
+
+.jewelry {
+  margin-bottom: 5rem;
+}
+
+.artofstory {
+  margin-top: 5rem;
 }
 
 .nonprofits {
-  background-color: #3AA695;
-  /* flex: 1; */
   padding: 3rem;
 }
 
 .love {
-  background-color: red;
-  /* flex: 1; */
   padding: 3rem;
+  margin-top: 5rem;
 }
 
 .river {
@@ -281,10 +362,15 @@ padding: 25rem;
   margin-bottom: 5rem;
 }
 
+.last {
+  clear: both;
+  float: none;
+  padding: 10rem;
+}
+
 /* bottom  */
 .arrow {
   float: left;
-  /* margin-top: -400px; */
   position: relative;
   z-index: 1;
 }
@@ -293,48 +379,43 @@ padding: 25rem;
   bottom: 0;
   float: right;
   font-size: 3rem;
+  padding-bottom: 2rem;
   padding-left: 15rem;
   padding-right: 3rem;
-  padding-top: 10rem;
-
+  padding-top: 5rem;
   text-align: center;
-  padding-bottom: 2rem;
-
 }
 
-.contact{
-  float: right; 
+.contact {
+  float: right;
   position: relative;
   z-index: 500;
 }
 
 @media screen and (max-width: 575px) {
-  .stacks, .beads, .story, .stackscase {
-    float: center;
+  .stacks {
+    float: none;
     width: 100%;
     margin-top: 1rem;
+    margin-bottom: none;
   }
 
-  .solo, .one, .college, .nonprofits, .love {
-    float: center;
+  .solo {
     width: 100%;
+    margin-top: none;
     margin-bottom: 1rem;
   }
 
-  .intro {
-    float: center;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+
 
   .problem, .solution {
-    float: center;
+    float: none;
     width: 100%;
     margin-bottom: 1rem;
   }
 
   .button {
-    width: 8rem;
+    padding: 1rem;
   }
 
   .stackstext {
@@ -349,8 +430,255 @@ padding: 25rem;
     display: none;
   }
 
-  /* @media screen and (min-width:500px) {
-   .bottom-image {
-    height: 15%;
+  .story, .beads {
+    width: 100%;
+    padding: 1rem;
   }
-} */
+
+  .one, .college, .nonprofits, .love {
+    float: none;
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .artofstory, .last, .jewelry {
+    margin: 1rem;
+    padding: 3rem;
+  }
+
+  /* project */
+  .flow, .high, .testing, .brand, .prototype-testing {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  .users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting, .competitive {
+    float: none;
+    padding: 1rem;
+  }
+
+  .stacks-pic, .changes, .moodboard, .personas-pic {
+    float: none;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .myprojects, .name {
+    float: none;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    /* padding-bottom: 10rem; */
+    text-align: center;
+    width: 15rem;
+  }
+
+  .hero-text {
+    line-height: 2.2rem;
+    padding-top: 20rem;
+    padding-left: 5rem;
+  }
+
+  /* project */
+  .space {
+    padding: 5rem;
+  }
+
+  .title {
+    background-color: #39858F;
+    color: #FFF1F1;
+    font-family: "Merriweather sans";
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 40rem;
+  }
+
+  .stackscase {
+    float: left;
+    width: 50%;
+  }
+
+  .stackspic {
+    float: right;
+    width: 40%;
+  }
+
+.buttona, .button{
+  width: auto;
+}
+
+}
+
+@media screen and (max-width:991px) {
+  .topnav {
+    overflow: hidden;
+    float: right;
+  }
+
+  .topnav a {
+    float: right;
+    font-size: 1.5rem;
+    margin: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  .box {
+    float: none;
+    height: auto;
+    margin: 1rem 1rem;
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .usersurvey {
+    display: inline;
+  }
+
+  .problem, .solution {
+    clear: both;
+    float: none;
+    height: auto;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .intro, .stacks-pic, .processpic {
+    float: none;
+    padding: 3rem;
+    width: 100%;
+  }
+
+  .users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting, .competitve {
+    float: none;
+    padding: 1rem;
+    width: 100%;
+  }
+
+ .stacks-pic, .changes, .moodboard, .personas-pic, .flow-pic {
+    float: none;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .flow, .high, .testing, .brand, .prototype-testing {
+    display: inline-block;
+    padding: 1.5rem;
+  }
+
+  /* About */
+  .beads, .story {
+    float: none;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .college, .one {
+    float: none;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .artofstory, .last, .jewelry {
+    margin: 1rem;
+    padding: 3rem;
+  }
+
+  .competitve-pic {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .box {
+    clear: left;
+    float: none;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5rem;
+    width: 90%;
+  }
+
+  .problem, .solution {
+    float: none;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+.competitive-pic {
+  display: none;
+}
+
+  .stacks-pic, .changes, .moodboard, .personas-pic, .flow-pic{
+    clear: none;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .button {
+    float: none;
+    padding: 1rem;
+  }
+
+  .competitive, .userp {
+    clear: none;
+    display: block;
+    float: none;
+    margin: 2rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting, .intro {
+    float: none;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .buttons {
+    float: none;
+    margin: 2rem;
+  }
+
+  .conclusion {
+    padding: 3rem;
+    margin: 1rem;
+  }
+
+
+  /* About */
+  .beads, .story {
+    float: none;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .college, .one, .nonprofits, .love {
+    float: none;
+    margin: 1rem;
+    padding: 5rem;
+    width: 100%;
+  }
+
+  .artofstory, .last, .jewelry {
+    margin: 0rem;
+    padding: 0rem;
+  }
+}
