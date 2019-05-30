@@ -3,33 +3,28 @@
 }
 
 html {
-  font-size: 10px;
   font-family: 'Merriweather sans';
+  font-size: 10px;
 }
 
 .topnav {
   background-color: #39858F;
-  overflow: hidden;
-  font-family: 'Merriweather sans';
   float: right;
+  font-family: 'Merriweather sans';
+  overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   color: #FFF1F1;
-  font-size: 2rem;
   float: right;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 4rem;
-  padding-right: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /*** typography ***/
 p, ul {
-  font-size: 2rem;
   font-family: 'Merriweather Sans';
+  font-size: 2rem;
   line-height: 3rem;
 }
 
@@ -37,84 +32,99 @@ h1 {
   color: #3AA695;
   font-family: "Yeseva One";
   font-size: 6rem;
-  font-weight: 700;
-  line-height: 8rem;
   font-style: normal;
   font-variant: normal;
+  font-weight: 700;
+  line-height: 8rem;
 }
 
 h2 {
-  font-family: "Merriweather sans";
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 4rem;
 }
 
 h3 {
-  font-family: "Merriweather sans";
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 2rem;
+}
+
+/*** structure ***/
+.container {
+  background-color: white;
+  width: auto;
+}
+
+img {
+  height: inherit;
+  max-width: 100%;
+}
+
+.icons {
+  height: 3rem;
+  margin: 1%;
+}
+
+.connect {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
   padding-top: 2rem;
 }
 
-.myprojects, .name {
-  background-color: #39858F;
-  color: #FFF1F1;
-  font-family: "Merriweather sans";
-  font-size: 3rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  text-align: center;
-  width: 40rem;
-}
-
-.hero-text {
-  line-height: 2.2rem;
-  padding-top: 20rem;
-  padding-left: 5rem;
-}
-
-.hero-image {
-  width: 100%;
-  background-image: url("/images/jkcrop.png");
-  /* Used if the image is unavailable */
-  height: 63rem;
-  /* You must set a specified height */
-  background-position: left;
-  /* Center the image */
-  background-repeat: no-repeat;
-}
-
-/* project */
-.space {
-  padding: 10rem;
-}
-
+/* index  */
 .title {
   background-color: #39858F;
   color: #FFF1F1;
   float: left;
-  font-family: "Merriweather sans";
-  font-size: 3rem;
-  line-height: 4rem;
-  margin-bottom: 3rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  overflow: hidden;
+  padding: 1rem;
   text-align: center;
-  width: 40rem;
 }
 
-.stacks-pic {
-  float: left;
-  width: 40%;
+.hero-text {
+  line-height: 2.2rem;
+  padding-left: 5rem;
+  padding-top: 20rem;
 }
 
+.hero-image {
+  background-image: url("/images/jkcrop.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 63rem;
+  width: 100%;
+}
+
+.banner {
+  height: 6rem;
+}
+
+.space {
+  padding: 10rem;
+}
+
+.solo, .stacks {
+  margin-top: 1rem;
+}
+
+.projectbutton, .solobutton {
+  border: 2px solid #3AA695;
+  color: #3AA695;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 30rem;
+}
+
+/* project */
 .intro {
   clear: left;
+  float: right;
   margin-left: 1rem;
   padding: 3rem;
-  float: right;
   width: 50%;
 }
 
@@ -136,8 +146,8 @@ h3 {
   cursor: pointer;
   float: left;
   font-size: 2rem;
-  margin-top: 2rem;
   margin-left: 5rem;
+  margin-top: 2rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -146,13 +156,13 @@ h3 {
 
 .button {
   border: 2px solid #3AA695;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   color: #3AA695;
   cursor: pointer;
+  display: block;
   font-size: 2rem;
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -163,19 +173,23 @@ h3 {
   margin: 3rem;
 }
 
+.allcompetitve {
+  display: inline-block
+}
+
 .competitive {
   clear: right;
   float: left;
   margin-top: 5rem;
   padding: 3rem;
-  width: 50%;
+  width: 45%;
 }
 
 .competitive-pic {
   clear: right;
   float: right;
-  padding: 3rem;
-  width: 30%;
+  padding-right: 3rem;
+  width: 40%;
 }
 
 .box {
@@ -184,10 +198,10 @@ h3 {
   color: #FFF1F1;
   float: left;
   height: 40rem;
-  margin-top: 6rem;
   margin-left: 1rem;
-  width: 27%;
+  margin-top: 6rem 0 0 1%;
   padding: 3rem;
+  width: 32%;
 }
 
 .usersurvey::after {
@@ -216,208 +230,44 @@ h3 {
 
 .flow, .high, .testing, .brand, .prototype-testing {
   display: inline-block;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting {
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   padding-left: 20rem;
   padding-right: 20rem;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
+/* CORRECT  */
 .conclusion {
   background-color: #3AA695;
   color: #FFF1F1;
   display: inline-block;
-  padding-bottom: 10rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
-  padding-top: 10rem;
   margin: 1rem;
-}
-
-/*** structure ***/
-.container {
-  background-color: white;
-  float: center;
-  width: auto;
-}
-
-img {
-  font-size: 1.5rem;
-  height: inherit;
-  max-width: 100%;
-  /* padding: ; */
-}
-
-.stackstext {
-  float: left;
-  width: 40%;
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-
-.projectbutton {
-  border: 2px solid #3AA695;
-  color: #3AA695;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 2rem;
-  margin-top: 2rem;
-  padding: 1rem;
-  text-align: center;
-  text-decoration: none;
-  width: 30rem;
-}
-
-.stacks {
-  float: right;
-  width: 50%;
-  margin-bottom: 10rem;
-}
-
-.solo {
-  clear: left;
-  float: left;
-  width: 50%;
-  margin-top: 5rem;
-}
-
-.solotext {
-  float: right;
-  width: 40%;
-  margin-right: 30px;
-  margin-bottom: 20px;
-}
-
-.projectbutton, .solobutton {
-  border: 2px solid #3AA695;
-  color: #3AA695;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 2rem;
-  margin-top: 2rem;
-  padding: 1rem;
-  text-align: center;
-  text-decoration: none;
-  width: 30rem;
+  padding: 3rem;
 }
 
 /* ABOUT */
-.hero-about {
-  width: 50%;
-  float: right;
-}
-
-.JKback {
-  height: 40rem;
-}
-
-.beads {
-  float: left;
-  width: 40%;
-}
-
-.one {
-  padding: 5rem;
-  float: right;
-  width: 50%;
-}
-
-.story {
-  clear: right;
-  float: right;
-  margin-top: 5rem;
-  width: 45%;
-}
-
-.college {
-  clear: left;
-  float: left;
-  margin-top: 5rem;
-  padding: 5rem;
-  width: 50%;
-}
-
-.jewelry {
-  margin-bottom: 5rem;
-}
-
-.artofstory {
-  margin-top: 5rem;
-}
-
-.nonprofits {
-  padding: 3rem;
-}
-
-.love {
-  padding: 3rem;
-  margin-top: 5rem;
-}
-
-.river {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.last {
-  clear: both;
+.beads, .story {
   float: none;
-  padding: 10rem;
+  padding: 2rem;
+  width: 100%;
 }
 
-/* bottom  */
-.arrow {
-  float: left;
-  position: relative;
-  z-index: 1;
+.artofstory, .last, .jewelry {
+  margin: 1rem;
+  padding: 3rem;
 }
 
-.bottom {
-  bottom: 0;
-  float: right;
-  font-size: 3rem;
-  padding-bottom: 2rem;
-  padding-left: 15rem;
-  padding-right: 3rem;
-  padding-top: 5rem;
-  text-align: center;
-}
-
-.contact {
-  float: right;
-  position: relative;
-  z-index: 500;
+.college, .one, .nonprofits, .love {
+  float: none;
+  padding: 3rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 575px) {
-  .stacks {
-    float: none;
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: none;
-  }
-
-  .solo {
-    width: 100%;
-    margin-top: none;
-    margin-bottom: 1rem;
-  }
-
-
-
-  .problem, .solution {
-    float: none;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .button {
-    padding: 1rem;
-  }
-
   .stackstext {
     display: none;
   }
@@ -430,21 +280,27 @@ img {
     display: none;
   }
 
-  .story, .beads {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .one, .college, .nonprofits, .love {
+  .stacks {
     float: none;
+    margin-bottom: none;
     margin-top: 1rem;
-    padding: 2rem;
     width: 100%;
   }
 
-  .artofstory, .last, .jewelry {
-    margin: 1rem;
-    padding: 3rem;
+  .solo {
+    margin-bottom: 1rem;
+    margin-top: none;
+    width: 100%;
+  }
+
+  .problem, .solution {
+    float: none;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .button {
+    padding: 1rem;
   }
 
   /* project */
@@ -453,7 +309,7 @@ img {
     padding: 1rem;
   }
 
-  .users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting, .competitive {
+  .users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting, .competitive, .intro {
     float: none;
     padding: 1rem;
   }
@@ -464,38 +320,8 @@ img {
     width: 100%;
   }
 
-  .myprojects, .name {
-    float: none;
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    /* padding-bottom: 10rem; */
-    text-align: center;
-    width: 15rem;
-  }
-
-  .hero-text {
-    line-height: 2.2rem;
-    padding-top: 20rem;
-    padding-left: 5rem;
-  }
-
-  /* project */
   .space {
     padding: 5rem;
-  }
-
-  .title {
-    background-color: #39858F;
-    color: #FFF1F1;
-    font-family: "Merriweather sans";
-    font-size: 3rem;
-    line-height: 4rem;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    width: 40rem;
   }
 
   .stackscase {
@@ -508,28 +334,12 @@ img {
     width: 40%;
   }
 
-.buttona, .button{
-  width: auto;
-}
-
+  .buttona, .button {
+    width: auto;
+  }
 }
 
 @media screen and (max-width:991px) {
-  .topnav {
-    overflow: hidden;
-    float: right;
-  }
-
-  .topnav a {
-    float: right;
-    font-size: 1.5rem;
-    margin: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
-  }
-
   .box {
     float: none;
     height: auto;
@@ -563,7 +373,7 @@ img {
     width: 100%;
   }
 
- .stacks-pic, .changes, .moodboard, .personas-pic, .flow-pic {
+  .stacks-pic, .changes, .moodboard, .personas-pic, .flow-pic {
     float: none;
     padding: 1rem;
     width: 100%;
@@ -573,31 +383,13 @@ img {
     display: inline-block;
     padding: 1.5rem;
   }
-
-  /* About */
-  .beads, .story {
-    float: none;
-    padding: 2rem;
-    width: 100%;
-  }
-
-  .college, .one {
-    float: none;
-    padding: 1rem;
-    width: 100%;
-  }
-
-  .artofstory, .last, .jewelry {
-    margin: 1rem;
-    padding: 3rem;
-  }
-
-  .competitve-pic {
-    display: none;
-  }
 }
 
 @media screen and (max-width:1200px) {
+  .competitive-pic {
+    display: none;
+  }
+
   .box {
     clear: left;
     float: none;
@@ -619,11 +411,7 @@ img {
     width: 90%;
   }
 
-.competitive-pic {
-  display: none;
-}
-
-  .stacks-pic, .changes, .moodboard, .personas-pic, .flow-pic{
+  .stacks-pic, .changes, .moodboard, .personas-pic, .flow-pic {
     clear: none;
     float: none;
     margin-left: auto;
@@ -657,12 +445,6 @@ img {
     margin: 2rem;
   }
 
-  .conclusion {
-    padding: 3rem;
-    margin: 1rem;
-  }
-
-
   /* About */
   .beads, .story {
     float: none;
@@ -670,15 +452,200 @@ img {
     width: 100%;
   }
 
-  .college, .one, .nonprofits, .love {
-    float: none;
-    margin: 1rem;
-    padding: 5rem;
-    width: 100%;
-  }
-
   .artofstory, .last, .jewelry {
     margin: 0rem;
     padding: 0rem;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .stackstext, .solotext {
+    padding: 2rem;
+  }
+
+  .stacks, .solo {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:991px) {
+  .banner {
+    height: auto;
+  }
+
+  .title {
+    background-color: #39858F;
+    color: #FFF1F1;
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    width: 40rem;
+  }
+
+  .college, .one, .nonprofits, .love {
+    float: none;
+    margin: 1rem;
+    padding: 6rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .topnav {
+    background-color: #39858F;
+    overflow: hidden;
+    font-family: 'Merriweather sans';
+    float: right;
+  }
+
+  .topnav a {
+    color: #FFF1F1;
+    font-size: 2rem;
+    float: right;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 1rem;
+  }
+
+  .connect {
+    float: right;
+    padding-right: 15rem;
+    padding-top: 15rem;
+  }
+
+  .bottom {
+    background-image: url("/images/arrowtransparent.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    float: right;
+    width: 100%
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  /* index */
+  .stacks-pic {
+    float: left;
+    width: 40%;
+  }
+
+  .stackstext {
+    float: left;
+    width: 40%;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 1rem;
+  }
+
+  .stacks {
+    float: right;
+    width: 50%;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+  }
+
+  .solo {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-top: 5rem;
+  }
+
+  .solotext {
+    float: right;
+    width: 40%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .projectbutton, .solobutton {
+    border: 2px solid #3AA695;
+    color: #3AA695;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 30rem;
+  }
+
+  /* about */
+  .one {
+    padding: 2.5rem;
+    float: right;
+    width: 50%;
+  }
+
+  .story {
+    clear: right;
+    float: right;
+    margin-top: 4rem;
+    width: 45%;
+  }
+
+  .beads {
+    clear: left;
+    float: left;
+    margin-top: 1rem;
+    width: 45%;
+  }
+
+  .college {
+    clear: left;
+    float: left;
+    margin-top: 5rem;
+    padding: 5rem;
+    width: 50%;
+  }
+
+  .jewelry {
+    margin-bottom: 5rem;
+  }
+
+  .artofstory {
+    margin-top: 4rem;
+  }
+
+  .nonprofits {
+    padding: 3rem;
+  }
+
+  .love {
+    padding: 3rem;
+  }
+
+  .river {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+
+  .last {
+    clear: both;
+    float: none;
+    padding: 9rem;
+  }
+
+  /* project STACKS CSE STUDY  */
+  .conclusion {
+    background-color: #3AA695;
+    color: #FFF1F1;
+    display: inline-block;
+    padding-bottom: 10rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 10rem;
+    margin: 1rem;
   }
 }
