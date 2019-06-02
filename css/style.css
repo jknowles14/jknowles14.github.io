@@ -58,30 +58,7 @@ img {
   max-width: 100%;
 }
 
-.icons {
-  height: 3rem;
-  margin: 1%;
-}
-
-.footerlist li {
-  display: inline;
-  list-style: none;
-  padding-right: 5px;
-}
-
-.bottom{
-  width: 100%;
-}
-
-.connect {
-  text-align: center;
-}
-
-.footerheading {
-  text-align: center;
-}
-
-/* index  */
+/* index HOME PAGE  */
 .title {
   background-color: #39858F;
   color: #FFF1F1;
@@ -132,27 +109,44 @@ img {
 
 .stacks {
   float: none;
-  margin-bottom: none;
   margin-top: 1rem;
   width: 100%;
 }
 
 .solo {
   margin-bottom: 1rem;
-  margin-top: none;
   width: 100%;
 }
 
-/* project */
+/* project STACKS CASE STUDY*/
+.icons {
+  height: 3rem;
+  margin: 1%;
+}
+
+.footerlist li {
+  display: inline;
+  list-style: none;
+  padding-right: 5px;
+}
+
+.connect {
+  text-align: center;
+}
+
+.footerheading {
+  text-align: center;
+}
+
 .box {
   background-color: #3AA695;
   clear: right;
   color: #FFF1F1;
   float: none;
   height: auto;
-  margin: 1rem 1rem;
+  margin: 2%;
   padding: 2rem;
-  width: 90%;
+  width: 96%;
 }
 
 .conclusion {
@@ -166,9 +160,9 @@ img {
 .problem, .solution {
   background-color: #3AA695;
   color: #FFF1F1;
-  margin: 1rem;
+  margin: 2%;
   padding: 3rem;
-  width: 100%;
+  width: 96%;
 }
 
 .button {
@@ -182,12 +176,11 @@ img {
   margin-top: 3rem;
   padding: 1.5rem;
   text-align: center;
-  width: 300px;
+  width: 100%;
 }
 
 .buttona {
   border: 2px solid #3AA695;
-  clear: auto;
   color: #3AA695;
   cursor: pointer;
   font-size: 1.5rem;
@@ -195,21 +188,17 @@ img {
   margin-right: auto;
   padding: 1.5rem;
   text-align: center;
-  width: auto;
 }
 
 .prototypebutton {
-  margin-bottom: 2rem;
-margin-left: auto;
-margin-right: auto;
-margin-top: 5rem;
-text-align: center;
+  margin: 5rem auto 2rem auto;
+  text-align: center;
 }
 
 .intro {
   clear: left;
-  padding: 3rem;
   margin-top: 3rem;
+  padding: 3rem;
 }
 
 .flow, .high, .testing, .brand, .prototype-testing {
@@ -222,7 +211,7 @@ text-align: center;
   padding: 2.5rem;
 }
 
-.stacks-pic, .changes, .moodboard, .personas-pic {
+.stacks-pic, .changes, .moodboard, .personas-pic, .processpic {
   float: none;
   padding: 3rem;
   width: 100%;
@@ -253,10 +242,6 @@ text-align: center;
   width: 100%;
 }
 
-.artofstory, .last, .jewelry {
-  padding: 0rem;
-}
-
 .college, .one, .nonprofits, .love {
   float: none;
   padding: 3rem;
@@ -277,9 +262,16 @@ text-align: center;
   }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1200px) {
   .competitive-pic {
     display: none;
+  }
+
+  .buttons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    max-width: 285px;
   }
 }
 
@@ -295,11 +287,20 @@ text-align: center;
     padding: 1rem;
     width: 100%;
   }
+
+  .buttona {
+    max-width: 300px;
+  }
 }
 
 @media screen and (min-width:991px) {
   .banner {
     height: auto;
+  }
+
+  .solo, .stacks {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title {
@@ -329,14 +330,14 @@ text-align: center;
     clear: both;
     float: none;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3%;
     padding: 1.5rem;
-    width: 100%;
+    width: 94%;
   }
 
-  .intro, .stacks-pic, .processpic {
+  .intro, .stacks-pic {
     float: none;
+    margin: 1rem;
     padding: 3rem;
     width: 100%;
   }
@@ -353,301 +354,277 @@ text-align: center;
     width: 100%;
   }
 
-  .flow, .high, .testing, .brand, .prototype-testing {
+  .flow, .high, .testing, .brand, .prototype-testing, .processpic {
     display: inline-block;
-    padding: 1.5rem;
+    margin: 2rem;
+    padding: 2rem;
   }
 
   .artofstory, .last, .jewelry {
     padding: 3rem;
   }
-
-  .prototypebutton {
-
-  }
-
-  .buttona{
-    margin: auto;
-    margin-top: 10rem;
-  }
-
 }
-  @media screen and (min-width:1200px) {
-    p, ul {
-      font-size: 2rem;
-      line-height: 3rem;
-    }
 
-    .topnav {
-      background-color: #39858F;
-      overflow: hidden;
-      float: right;
-    }
-
-    .topnav a {
-      color: #FFF1F1;
-      font-size: 2rem;
-      float: right;
-      justify-content: center;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      padding-left: 4rem;
-      padding-right: 1rem;
-    }
-
-    .connect {
-      display: inline;
-      float: right;
-      padding-right: 15rem;
-      padding-top: 15rem;
-    }
-
-    .bottom {
-      background-image: url("/images/arrowtransparent.png");
-      background-position: bottom;
-      background-repeat: no-repeat;
-      float: right;
-      width: 100%;
-    }
-
-    h3 {
-      font-size: 3rem;
-    }
-
-    /* index */
-    .stacks-pic {
-      float: left;
-      width: 40%;
-    }
-
-    .stackstext {
-      float: left;
-      width: 40%;
-      margin-bottom: 10px;
-      margin-left: 30px;
-      margin-top: 1rem;
-    }
-
-    .stacks {
-      float: right;
-      width: 50%;
-      margin-bottom: 10rem;
-      margin-top: 3rem;
-    }
-
-    .solo {
-      clear: left;
-      float: left;
-      width: 50%;
-      margin-top: 5rem;
-    }
-
-    .solotext {
-      float: right;
-      width: 40%;
-      margin-right: 30px;
-      margin-bottom: 20px;
-    }
-
-    .projectbutton, .solobutton {
-      border: 2px solid #3AA695;
-      color: #3AA695;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 2rem;
-      margin-top: 2rem;
-      padding: 1rem;
-      text-align: center;
-      text-decoration: none;
-      width: 30rem;
-    }
-
-    /* about */
-    .one {
-      padding: 2.5rem;
-      float: right;
-      width: 50%;
-    }
-
-    .story {
-      clear: right;
-      float: right;
-      margin-top: 4rem;
-      width: 45%;
-    }
-
-    .beads {
-      clear: left;
-      float: left;
-      margin-top: 1rem;
-      width: 45%;
-    }
-
-    .college {
-      clear: left;
-      float: left;
-      margin-top: 5rem;
-      padding: 5rem;
-      width: 50%;
-    }
-
-    .jewelry {
-      margin-bottom: 5rem;
-    }
-
-    .artofstory {
-      margin-top: 4rem;
-    }
-
-    .nonprofits {
-      padding: 3rem;
-    }
-
-    .love {
-      padding: 3rem;
-    }
-
-    .river {
-      margin-bottom: 5rem;
-      margin-top: 5rem;
-    }
-
-    .last {
-      clear: both;
-      float: none;
-      padding: 9rem;
-    }
-
-    /* project STACKS CSE STUDY  */
-    .intro {
-      clear: left;
-      float: right;
-      margin-left: 1rem;
-      padding: 3rem;
-      width: 50%;
-    }
-
-    .problem, .solution {
-      background-color: #3AA695;
-      clear: left;
-      color: #FFF1F1;
-      float: right;
-      height: 26rem;
-      margin: 3rem;
-      padding: 3rem;
-      width: 45%;
-    }
-
-    .buttona {
-      border: 2px solid #3AA695;
-      clear: both;
-      color: #3AA695;
-      cursor: pointer;
-      float: left;
-      font-size: 2rem;
-      margin-left: 5rem;
-      margin-top: 5rem;
-      padding: 1rem;
-      text-align: center;
-      text-decoration: none;
-      width: 51rem;
-    }
-
-    .button {
-      border: 2px solid #3AA695;
-      color: #3AA695;
-      cursor: pointer;
-      display: block;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 1rem;
-      text-align: center;
-      text-decoration: none;
-      width: 40rem;
-    }
-
-    .buttons {
-      margin: 3rem;
-    }
-
-    .allcompetitve {
-      display: inline-block
-    }
-
-    .competitive {
-      clear: right;
-      float: left;
-      margin-top: 5rem;
-      padding: 3rem;
-      width: 45%;
-    }
-
-    .competitive-pic {
-      clear: right;
-      float: right;
-      padding-right: 3rem;
-      width: 40%;
-    }
-
-    .box {
-      background-color: #3AA695;
-      clear: right;
-      color: #FFF1F1;
-      float: left;
-      height: 40rem;
-      margin-left: 1rem;
-      margin-top: 6rem 0 0 1%;
-      padding: 3rem;
-      width: 31%;
-    }
-
-    .usersurvey::after {
-      display: table;
-    }
-
-    .personas-pic {
-      clear: left;
-      float: left;
-      padding-top: 6rem;
-      width: 45%;
-    }
-
-    .processpic, .flow-pic, .changes, .moodboard {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 55%;
-    }
-
-    .userp {
-      float: right;
-      margin-top: 5rem;
-      padding: 3rem;
-      width: 50%;
-    }
-
-    .flow, .high, .testing, .brand, .prototype-testing {
-      display: inline-block;
-      padding: 2rem;
-    }
-
-    .users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting {
-      padding-bottom: 5rem;
-      padding-left: 20rem;
-      padding-right: 20rem;
-      padding-top: 5rem;
-    }
-
-    .conclusion {
-      background-color: #3AA695;
-      color: #FFF1F1;
-      display: inline-block;
-      padding-bottom: 10rem;
-      padding-left: 20rem;
-      padding-right: 20rem;
-      padding-top: 10rem;
-      margin: 1rem;
-    }
+@media screen and (min-width:1200px) {
+  p, ul {
+    font-size: 2rem;
+    line-height: 3rem;
   }
+
+  .topnav {
+    background-color: #39858F;
+    float: right;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    color: #FFF1F1;
+    float: right;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 2rem 1rem 2rem 4rem;
+  }
+
+  .bottom {
+    clear: both;
+    margin-top: 8rem;
+  }
+
+  /* index HOME PAGE */
+  .stacks-pic {
+    float: left;
+    margin: 2rem;
+    width: 40%;
+  }
+
+  .stackstext {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .stacks {
+    float: right;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    width: 50%;
+  }
+
+  .solo {
+    clear: left;
+    float: left;
+    margin-top: 5rem;
+    width: 50%;
+  }
+
+  .solotext {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 40%;
+  }
+
+  .projectbutton, .solobutton {
+    border: 2px solid #3AA695;
+    color: #3AA695;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 30rem;
+  }
+
+  /* about */
+  .one {
+    float: right;
+    padding: 2.5rem;
+    width: 50%;
+  }
+
+  .story {
+    clear: right;
+    float: right;
+    margin-top: 4rem;
+    width: 45%;
+  }
+
+  .beads {
+    clear: left;
+    float: left;
+    margin-top: 1rem;
+    width: 45%;
+  }
+
+  .college {
+    clear: left;
+    float: left;
+    margin-top: 5rem;
+    padding: 5rem;
+    width: 50%;
+  }
+
+  .jewelry {
+    margin-bottom: 5rem;
+  }
+
+  .artofstory {
+    margin-top: 4rem;
+  }
+
+  .nonprofits {
+    padding: 3rem;
+  }
+
+  .love {
+    padding: 3rem;
+  }
+
+  .river {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+
+  .last {
+    clear: both;
+    float: none;
+    padding: 9rem;
+  }
+
+  /* project STACKS CSE STUDY  */
+  .intro {
+    clear: left;
+    float: right;
+    margin-left: 1rem;
+    padding: 3rem;
+    width: 50%;
+  }
+
+  .problem, .solution {
+    background-color: #3AA695;
+    clear: left;
+    color: #FFF1F1;
+    float: right;
+    height: 23rem;
+    margin: 2%;
+    padding: 3rem;
+    width: 46%;
+  }
+
+  .buttona {
+    border: 2px solid #3AA695;
+    clear: both;
+    color: #3AA695;
+    cursor: pointer;
+    float: left;
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 40rem;
+  }
+
+  .button {
+    border: 2px solid #3AA695;
+    color: #3AA695;
+    cursor: pointer;
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 40rem;
+  }
+
+  .allcompetitve {
+    display: inline-block;
+  }
+
+  .competitive {
+    clear: right;
+    float: left;
+    margin-top: 5rem;
+    padding: 3rem;
+    width: 45%;
+  }
+
+  .competitive-pic {
+    clear: right;
+    float: right;
+    padding-right: 3rem;
+    width: 40%;
+  }
+
+  .box {
+    background-color: #3AA695;
+    clear: right;
+    color: #FFF1F1;
+    float: left;
+    height: 31.5rem;
+    margin-left: 1%;
+    padding: 3rem;
+    width: 30%;
+  }
+
+  .usersurvey::after {
+    display: table;
+  }
+
+  .personas-pic {
+    clear: left;
+    float: left;
+    margin: 1rem;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    width: 45%;
+  }
+
+  .processpic, .flow-pic, .changes, .moodboard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 55%;
+  }
+
+  .userp {
+    float: right;
+    margin-top: 5rem;
+    padding: 3rem;
+    width: 50%;
+  }
+
+  .flow, .high, .testing, .brand, .prototype-testing {
+    display: inline-block;
+    padding: 2rem;
+  }
+
+  .users, .fi, .pref, .dash, .mood, .branding, .clickable, .usertesting {
+    padding: 3rem 20rem 5rem 20rem;
+  }
+
+  .dashboard, .landing {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+  }
+
+  .conclusion {
+    background-color: #3AA695;
+    color: #FFF1F1;
+    display: inline-block;
+    margin: 2rem;
+    padding: 10rem 20rem 10rem 20rem;
+  }
+}
