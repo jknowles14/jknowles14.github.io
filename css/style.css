@@ -12,6 +12,7 @@ html {
   float: right;
   font-family: 'Merriweather sans';
   overflow: hidden;
+  text-decoration: none;
 }
 
 .topnav a {
@@ -19,6 +20,15 @@ html {
   float: right;
   font-size: 1.5rem;
   padding: 1rem;
+  text-decoration: none;
+}
+
+a:link, a:visted {
+  color: #DFD4D4;
+}
+
+a.current:link, a.current:visited {
+  color: #DFD4D4;
 }
 
 /*** typography ***/
@@ -176,6 +186,7 @@ img {
   margin-top: 3rem;
   padding: 1.5rem;
   text-align: center;
+  text-decoration: none;
   width: 100%;
 }
 
@@ -188,6 +199,7 @@ img {
   margin-right: auto;
   padding: 1.5rem;
   text-align: center;
+  text-decoration: none;
 }
 
 .prototypebutton {
@@ -201,7 +213,7 @@ img {
   padding: 3rem;
 }
 
-.flow, .high, .testing, .brand, .prototype-testing {
+.flow, .high, .testing, .brand, .prototype-testing, .personas, .allcompetitve {
   display: inline-block;
   padding: 1rem;
 }
@@ -375,6 +387,7 @@ img {
     background-color: #39858F;
     float: right;
     overflow: hidden;
+    text-decoration: none;
   }
 
   .topnav a {
@@ -382,7 +395,8 @@ img {
     float: right;
     font-size: 2rem;
     justify-content: center;
-    padding: 2rem 1rem 2rem 4rem;
+    padding: 2rem 3rem 2rem 3rem;
+    text-decoration: none;
   }
 
   .bottom {
@@ -492,7 +506,7 @@ img {
   .last {
     clear: both;
     float: none;
-    padding: 9rem;
+    padding: 9rem 16rem 9rem 16rem;
   }
 
   /* project STACKS CSE STUDY  */
@@ -504,9 +518,20 @@ img {
     width: 50%;
   }
 
-  .problem, .solution {
+  .problem {
     background-color: #3AA695;
     clear: left;
+    color: #FFF1F1;
+    float: left;
+    height: 23rem;
+    margin: 2%;
+    padding: 3rem;
+    width: 46%;
+  }
+
+  .solution {
+    background-color: #3AA695;
+    clear: right;
     color: #FFF1F1;
     float: right;
     height: 23rem;
@@ -599,7 +624,7 @@ img {
   .userp {
     float: right;
     margin-top: 5rem;
-    padding: 3rem;
+    padding: 3rem 5rem 3rem 3rem;
     width: 50%;
   }
 
