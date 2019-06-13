@@ -8,20 +8,38 @@ html {
 }
 
 .topnav {
-  background-color: #39858F;
-  float: right;
-  font-family: 'Merriweather sans';
   overflow: hidden;
-  text-decoration: none;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
 }
 
 .topnav a {
-  color: #FFF1F1;
-  float: right;
-  font-size: 1.5rem;
-  padding: 1rem;
-  text-decoration: none;
+color: #39858F;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
 }
+
+
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+/* Style the active link (or home/logo) */
+/* .active {
+  color: #39858F;
+} */
 
 a:link, a:visted {
   color: #DFD4D4;
@@ -57,6 +75,11 @@ h3 {
   font-size: 2rem;
 }
 
+strong {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 /*** structure ***/
 .container {
   background-color: white;
@@ -69,10 +92,29 @@ img {
 }
 
 /* index HOME PAGE  */
+
+.stacksec, .solosec{
+  margin: 7rem 3rem 5rem 3rem;
+}
+
+.stackstext, .solotext {
+  padding: 1rem;
+  margin: 2rem 1rem 2.5rem 1rem;
+}
+
+.stacks, .solo {
+  float: none;
+  margin-left: 2px;
+  margin-right: 2px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  width: 40%;
+}
+
 .title {
   background-color: #39858F;
   color: #FFF1F1;
   float: left;
+  margin-bottom: 3rem;
   overflow: hidden;
   padding: 1rem;
   text-align: center;
@@ -80,7 +122,8 @@ img {
 
 .hero-text {
   line-height: 2.2rem;
-  padding-left: 5rem;
+  margin: 3rem 2.2rem 1rem 1rem;
+  padding-left: 2.5rem;
   padding-top: 20rem;
 }
 
@@ -105,16 +148,16 @@ img {
 }
 
 .projectbutton, .solobutton {
-  border: 2px solid #3AA695;
+  border: 1.5px solid #3AA695;
   color: #3AA695;
   cursor: pointer;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 2rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
-  width: 30rem;
+  width: 23rem;
 }
 
 .stacks {
@@ -142,6 +185,7 @@ img {
 
 .connect {
   text-align: center;
+  margin: 3rem 0 0 1rem;
 }
 
 .footerheading {
@@ -260,19 +304,7 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 575px) {
-  .stackstext {
-    display: none;
-  }
 
-  .projectbutton {
-    display: none;
-  }
-
-  .solotext {
-    display: none;
-  }
-}
 
 @media screen and (max-width:1200px) {
   .competitive-pic {
@@ -285,20 +317,14 @@ img {
     margin-top: 1.5rem;
     max-width: 285px;
   }
+
+  .rwd-break{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 575px) {
-  .stackstext, .solotext {
-    padding: 2rem;
-  }
 
-  .stacks, .solo {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-    width: 100%;
-  }
 
   .buttona {
     max-width: 300px;
@@ -306,8 +332,49 @@ img {
 }
 
 @media screen and (min-width:991px) {
+
+  /* .myLinks {
+    background-color: #39858F;
+    float: right;
+    font-family: 'Merriweather sans';
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .myLinks a {
+    color: #FFF1F1;
+    float: right;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+  } */
+
+  .topnav a.icon {
+    display: none;
+  }
+
+  .topnav #myLinks {
+    display: inline;
+  }
+
+  .topnav {
+    float: right;
+    font-size: 2rem;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .topnav a {
+    background-color: #39858F;
+    color: white;
+    float: right;
+    justify-content: center;
+    padding: 2rem 3rem 2rem 3rem;
+    text-decoration: none;
+  }
+
   .banner {
-    height: auto;
+    float: left;
   }
 
   .solo, .stacks {
@@ -319,9 +386,8 @@ img {
     background-color: #39858F;
     color: #FFF1F1;
     font-size: 3rem;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    margin: 4rem 0 3rem 0;
+    padding-top: 1rem 0 1.5rem 4rem;
     text-align: center;
     width: 40rem;
   }
@@ -332,6 +398,7 @@ img {
     padding: 6rem;
     width: 100%;
   }
+
 
   /* project  */
   .usersurvey {
@@ -377,27 +444,17 @@ img {
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   p, ul {
     font-size: 2rem;
     line-height: 3rem;
   }
 
-  .topnav {
-    background-color: #39858F;
-    float: right;
-    overflow: hidden;
-    text-decoration: none;
+  strong {
+    font-size: 2.3rem;
   }
 
-  .topnav a {
-    color: #FFF1F1;
-    float: right;
-    font-size: 2rem;
-    justify-content: center;
-    padding: 2rem 3rem 2rem 3rem;
-    text-decoration: none;
-  }
+
 
   .bottom {
     clear: both;
@@ -419,11 +476,15 @@ img {
     width: 40%;
   }
 
+  .stacksec, .solosec{
+    display: inline-block;
+    margin: 8rem 5rem 5rem 5rem;
+  }
+
   .stacks {
     float: right;
-    margin-bottom: 10rem;
-    margin-top: 3rem;
-    width: 50%;
+    margin-bottom:3rem 3rem 10rem 3rem;
+    width: 40%;
   }
 
   .solo {
@@ -444,7 +505,6 @@ img {
     border: 2px solid #3AA695;
     color: #3AA695;
     cursor: pointer;
-    display: inline-block;
     font-size: 2rem;
     margin-top: 2rem;
     padding: 1rem;
@@ -504,8 +564,7 @@ img {
   }
 
   .last {
-    clear: both;
-    float: none;
+    float: left ;
     padding: 9rem 16rem 9rem 16rem;
   }
 
@@ -514,7 +573,7 @@ img {
     clear: left;
     float: right;
     margin-left: 1rem;
-    padding: 3rem;
+    padding: 5rem;
     width: 50%;
   }
 

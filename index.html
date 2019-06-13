@@ -8,24 +8,35 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Merriweather Sans' rel='stylesheet'>
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yeseva+One" />
 </head>
 <div class="hero-image">
   <div class="topnav">
-    <a href="#contact">Contact</a>
-    <a href="about.html">About</a>
-    <a class="current" href="index.html">Home</a>
+    <a href="#index" class="active"><img src="images/JK-banner.png" alt="JK logo on teal" class="banner" /></a>
+    <div id="myLinks">
+      <a href="#contact">Contact</a>
+      <a href="project.html">Cloud Project</a>
+      <a href="#">Resume</a>
+      <a href="about.html">About</a>
+      <a class="current" href="index.html">Home</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-  <article class="banner">
-    <img src="images/JK-banner.png" alt="JK logo on teal" />
-  </article>
+
+
+
 
   <body>
     <header>
       <div class="hero-text">
         <h2> Hey there!</h2>
         <h1>I’m Julie</h1>
-        <p class="slogan">A Denver-based UX/UI designer passionate about creating intuitive experiences founded on research and strategy. </p>
+        <p class="slogan">A <strong> Denver-based UX/UI designer</strong> passionate about creating <br class="rwd-break">intuitive experiences founded on <strong> research and strategy</strong>.</p>
       </div>
     </header>
 </div>
@@ -33,32 +44,35 @@
   <div class="title">
     <h3>MY PROJECTS</h3>
   </div>
-  <section>
-    <a href="project.html">
-      <img src="images/stacks-computer.jpg" alt="Stacks screenshot" class="stacks" />
-    </a>
+  <section class="stacksec">
+    <div>
+      <a href="project.html">
+        <img src="images/stacks-folder.png" alt="Stacks screenshot" class="stacks" />
+      </a>
+    </div>
+    <div class="stackstext">
+      <h3>UX • UI • PROTOTYPE</h3>
+      <h1>Stacks</h1>
+      <p>
+        Stacks is a cloud storage prototype that allows users to share, organize, and save documents and images. Users have the ability to share with links or by email, password protect links and tag documents for easy searching.
+      </p>
+      <a href="project.html" class="projectbutton">VIEW THE CASE STUDY</a>
+    </div>
   </section>
-  <section class="stackstext">
-    <h3>UX • UI • PROTOTYPE</h3>
-    <h1>Stacks</h1>
-    <p>
-      Stacks is a cloud storage prototype that allows users to share, organize, and save documents and images. Users have the ability to share with links or by email, password protect links and tag documents for easy searching.
-    </p>
-    <a href="project.html" class="projectbutton">VIEW THE CASE STUDY</a>
-  </section>
-  <section>
-    <article class="solo">
+  <section class="solosec">
+    <div class="solo">
       <img src="images/mobileSOLO.jpg" alt="Solo Project screenshot" />
-    </article>
-  </section>
-  <section class="solotext">
-    <h3>UX • UI • PROTOTYPE</h3>
-    <h1>Solo TBD</h1>
-    <p>
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nUt enim ad minim veniam. Ut enim ad minim veniam, quis
-      nostrud exercitation ullamco laboris n Ut enim ad minim veniam, quis nostrud.
-    </p>
-    <a href="#solo" class="solobutton">VIEW THE CASE STUDY</a>
+    </div>
+
+    <div class="solotext">
+      <h3>UX • UI • PROTOTYPE</h3>
+      <h1>Solo TBD</h1>
+      <p>
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nUt enim ad minim veniam. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris n Ut enim ad minim veniam, quis nostrud.
+      </p>
+      <a href="#solo" class="solobutton">VIEW THE CASE STUDY</a>
+    </div>
   </section>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141456727-1"></script>
@@ -72,6 +86,18 @@
 
     gtag('config', 'UA-141456727-1');
   </script>
+  <script>
+
+
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
 
   </body>
   <footer>
@@ -80,7 +106,7 @@
         <h2 class="footerheading">Let's Connect</h2>
         <ul class="footerlist">
           <li><a href="https://www.linkedin.com/in/julie-knowles/">
-              <img src="./images/linkedin.svg" alt=" linkedin icon" class="icons"></a></li>
+              <img src="./images/linkedin2.svg" alt=" linkedin icon" class="icons"></a></li>
           <li><a href="https://github.com/jknowles14">
               <img src="./images/github.svg" alt="github icon" class="icons"></a></li>
           <li><a href="mailto:julieanne.m.knowles@gmail.com">
