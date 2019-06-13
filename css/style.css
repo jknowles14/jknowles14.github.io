@@ -333,21 +333,6 @@ img {
 
 @media screen and (min-width:991px) {
 
-  /* .myLinks {
-    background-color: #39858F;
-    float: right;
-    font-family: 'Merriweather sans';
-    overflow: hidden;
-    text-decoration: none;
-  }
-
-  .myLinks a {
-    color: #FFF1F1;
-    float: right;
-    font-size: 1.5rem;
-    padding: 1rem;
-    text-decoration: none;
-  } */
 
   .topnav a.icon {
     display: none;
@@ -355,19 +340,20 @@ img {
 
   .topnav #myLinks {
     display: inline;
+    float: right;
   }
 
   .topnav {
-    float: right;
     font-size: 2rem;
     overflow: hidden;
     text-decoration: none;
+    width: 100%;
   }
 
   .topnav a {
     background-color: #39858F;
     color: white;
-    float: right;
+    float: left;
     justify-content: center;
     padding: 2rem 3rem 2rem 3rem;
     text-decoration: none;
