@@ -18,28 +18,20 @@ html {
 }
 
 .topnav a {
-color: #39858F;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-display: block;
+  color: #39858F;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-
-
-/* Style the hamburger menu */
+/*  hamburger menu */
 .topnav a.icon {
   display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
-
-
-/* Style the active link (or home/logo) */
-/* .active {
-  color: #39858F;
-} */
 
 a:link, a:visted {
   color: #DFD4D4;
@@ -68,11 +60,17 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
+  font-weight: bold;
   line-height: 4rem;
 }
 
 h3 {
   font-size: 2rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+  line-height: 4rem;
 }
 
 strong {
@@ -91,9 +89,28 @@ img {
   max-width: 100%;
 }
 
-/* index HOME PAGE  */
+.icons {
+  height: 3rem;
+  margin: 1%;
+}
 
-.stacksec, .solosec{
+.footerlist li {
+  display: inline;
+  list-style: none;
+  padding-right: 5px;
+}
+
+.connect {
+  text-align: center;
+  margin: 12rem 0 0 1rem;
+}
+
+.footerheading {
+  text-align: center;
+}
+
+/* index HOME PAGE  */
+.stacksec, .solosec {
   margin: 7rem 3rem 5rem 3rem;
 }
 
@@ -103,11 +120,10 @@ img {
 }
 
 .stacks, .solo {
-  float: none;
-  margin-left: 2px;
-  margin-right: 2px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-  width: 40%;
+  margin: 5rem 2rem 5rem 2rem;
+  outline-color: #ECECEC;
+  outline-style: solid;
+  width: 85%;
 }
 
 .title {
@@ -115,6 +131,7 @@ img {
   color: #FFF1F1;
   float: left;
   margin-bottom: 3rem;
+  margin-top: 10rem;
   overflow: hidden;
   padding: 1rem;
   text-align: center;
@@ -143,10 +160,6 @@ img {
   padding: 10rem;
 }
 
-.solo, .stacks {
-  margin-top: 1rem;
-}
-
 .projectbutton, .solobutton {
   border: 1.5px solid #3AA695;
   color: #3AA695;
@@ -160,47 +173,14 @@ img {
   width: 23rem;
 }
 
-.stacks {
-  float: none;
-  margin-top: 1rem;
-  width: 100%;
-}
-
-.solo {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
 /* project STACKS CASE STUDY*/
-.icons {
-  height: 3rem;
-  margin: 1%;
-}
-
-.footerlist li {
-  display: inline;
-  list-style: none;
-  padding-right: 5px;
-}
-
-.connect {
-  text-align: center;
-  margin: 3rem 0 0 1rem;
-}
-
-.footerheading {
-  text-align: center;
-}
 
 .box {
-  background-color: #3AA695;
   clear: right;
-  color: #FFF1F1;
   float: none;
   height: auto;
-  margin: 2%;
   padding: 2rem;
-  width: 96%;
+  /* width: 96%; */
 }
 
 .conclusion {
@@ -257,20 +237,41 @@ img {
   padding: 3rem;
 }
 
-.flow, .high, .testing, .brand, .prototype-testing, .personas, .allcompetitve {
+.section {
   display: inline-block;
+  margin: 0 2rem 0 2rem;
   padding: 1rem;
 }
 
-.users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting, .competitive, .userp {
+
+.pref, .dash {
   float: none;
   padding: 2.5rem;
+  width: 100%;
 }
 
-.stacks-pic, .changes, .moodboard, .personas-pic, .processpic {
+.users, .fi, .landing, .dashboard, .mood, .branding, .clickable, .usertesting, .userp, .competitive {
+  float: none;
+  padding: 2.5rem;
+  width: 100%;
+}
+
+.changes, .moodboard, .personas-pic, .processpic {
   float: none;
   padding: 3rem;
   width: 100%;
+}
+
+.stacks-pic {
+  float: none;
+  outline-color: #ECECEC;
+  outline-style: solid;
+  width: 100%;
+}
+
+.competitive-pic {
+  margin: 4rem auto 0 auto;
+  width: 50%;
 }
 
 .space {
@@ -298,18 +299,17 @@ img {
   width: 100%;
 }
 
-.college, .one, .nonprofits, .love {
+.college, .one, .nonprofits, .design {
   float: none;
   padding: 3rem;
   width: 100%;
 }
 
-
+.artofstory, .last, .jewelry {
+  display: inline-block;
+}
 
 @media screen and (max-width:1200px) {
-  .competitive-pic {
-    display: none;
-  }
 
   .buttons {
     margin-left: auto;
@@ -318,21 +318,47 @@ img {
     max-width: 285px;
   }
 
-  .rwd-break{
+  .rwd-break {
     display: none;
   }
 }
 
 @media screen and (min-width: 575px) {
-
+  .hero-text {
+    margin: 0 4rem 0 7rem;
+  }
 
   .buttona {
     max-width: 300px;
   }
+
+  .title {
+    padding-left: 6rem;
+    padding-right: 1rem;
+  }
+
+  .stacksec, .solosec {
+    display: inline-block;
+    margin: 8rem 6rem 5rem 6rem;
+  }
+
+  .stacks, .solo  {
+    margin: 0 2rem 0 2rem;
+    width: 70%;
+  }
+
+
+  .section{
+    margin: 3rem 13rem 3rem 4rem;
+  }
+
+
 }
 
 @media screen and (min-width:991px) {
-
+  h3 {
+    font-size: 3rem;
+  }
 
   .topnav a.icon {
     display: none;
@@ -359,21 +385,47 @@ img {
     text-decoration: none;
   }
 
+  /* home index page */
   .banner {
     float: left;
   }
 
-  .solo, .stacks {
-    margin-left: auto;
-    margin-right: auto;
+  .stackstext {
+    float: left;
+    margin: 2rem 0 1rem 4.5rem;
+    width: 40%;
+  }
+
+  .stacksec, .solosec {
+    display: inline-block;
+    margin: 8rem 5rem 5rem 5rem;
+  }
+
+  .stacks {
+    float: right;
+    margin: 3rem 7rem 10rem 0;
+    width: 35%;
+  }
+
+  .solo {
+    clear: left;
+    float: left;
+    margin-top: 5rem;
+    width: 50%;
+  }
+
+  .solotext {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 40%;
   }
 
   .title {
     background-color: #39858F;
     color: #FFF1F1;
-    font-size: 3rem;
-    margin: 4rem 0 3rem 0;
-    padding-top: 1rem 0 1.5rem 4rem;
+    margin: 8rem 0 3rem 0;
+    padding-top: 2.5rem 0 2.5rem 4rem;
     text-align: center;
     width: 40rem;
   }
@@ -385,11 +437,16 @@ img {
     width: 100%;
   }
 
-
-  /* project  */
-  .usersurvey {
-    display: inline;
+  .artofstory, .last, .jewelry {
+    padding: 3rem;
   }
+
+  /* project STACKS CASE STUDY  */
+  .section {
+    display: inline-block;
+    margin: 6rem 20rem 6rem 20rem;
+  }
+
 
   .problem, .solution {
     clear: both;
@@ -400,37 +457,20 @@ img {
     width: 94%;
   }
 
-  .intro, .stacks-pic {
+
+
+  .changes, .moodboard, .personas-pic, .flow-pic, .processpic {
     float: none;
-    margin: 1rem;
-    padding: 3rem;
-    width: 100%;
+    padding: 4rem;
+    width: 58%;
   }
 
-  .users, .fi, .landing, .dashboard, .pref, .dash, .mood, .branding, .clickable, .usertesting, .competitve {
-    float: none;
-    padding: 1rem;
-    width: 100%;
-  }
-
-  .stacks-pic, .changes, .moodboard, .personas-pic, .flow-pic {
-    float: none;
-    padding: 1rem;
-    width: 100%;
-  }
-
-  .flow, .high, .testing, .brand, .prototype-testing, .processpic {
-    display: inline-block;
-    margin: 2rem;
-    padding: 2rem;
-  }
-
-  .artofstory, .last, .jewelry {
-    padding: 3rem;
+  .usersurvey {
+    display: table;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   p, ul {
     font-size: 2rem;
     line-height: 3rem;
@@ -440,37 +480,31 @@ img {
     font-size: 2.3rem;
   }
 
-
-
   .bottom {
     clear: both;
     margin-top: 8rem;
   }
 
   /* index HOME PAGE */
-  .stacks-pic {
-    float: left;
-    margin: 2rem;
-    width: 40%;
+  .hero-text {
+    margin-left: 9.7rem;
   }
 
   .stackstext {
     float: left;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-top: 1rem;
+    margin: 2rem 0 1rem 4.5rem;
     width: 40%;
   }
 
-  .stacksec, .solosec{
+  .stacksec, .solosec {
     display: inline-block;
     margin: 8rem 5rem 5rem 5rem;
   }
 
   .stacks {
     float: right;
-    margin-bottom:3rem 3rem 10rem 3rem;
-    width: 40%;
+    margin: 3rem 7rem 10rem 0;
+    width: 35%;
   }
 
   .solo {
@@ -502,65 +536,43 @@ img {
   /* about */
   .one {
     float: right;
-    padding: 2.5rem;
+    padding: 0;
     width: 50%;
-  }
-
-  .story {
-    clear: right;
-    float: right;
-    margin-top: 4rem;
-    width: 45%;
   }
 
   .beads {
-    clear: left;
     float: left;
-    margin-top: 1rem;
-    width: 45%;
+      padding: 0;
+    width: 40%;
   }
 
-  .college {
-    clear: left;
+  .story, .design {
+    float: right;
+      padding: 0;
+    width: 40%;
+  }
+
+  .college, .nonprofits {
     float: left;
-    margin-top: 5rem;
-    padding: 5rem;
+      padding: 0;
     width: 50%;
-  }
-
-  .jewelry {
-    margin-bottom: 5rem;
-  }
-
-  .artofstory {
-    margin-top: 4rem;
-  }
-
-  .nonprofits {
-    padding: 3rem;
-  }
-
-  .love {
-    padding: 3rem;
   }
 
   .river {
-    margin-bottom: 5rem;
     margin-top: 5rem;
   }
 
-  .last {
-    float: left ;
-    padding: 9rem 16rem 9rem 16rem;
-  }
 
   /* project STACKS CSE STUDY  */
   .intro {
-    clear: left;
+    clear: right;
     float: right;
-    margin-left: 1rem;
-    padding: 5rem;
-    width: 50%;
+    width: 45%;
+  }
+
+  .stacks-pic {
+    float: left;
+    width: 40%;
   }
 
   .problem {
@@ -568,10 +580,10 @@ img {
     clear: left;
     color: #FFF1F1;
     float: left;
-    height: 23rem;
+    height: 42rem;
     margin: 2%;
-    padding: 3rem;
-    width: 46%;
+    padding: 4rem;
+    width: 44%;
   }
 
   .solution {
@@ -579,10 +591,23 @@ img {
     clear: right;
     color: #FFF1F1;
     float: right;
-    height: 23rem;
+    height: 42rem;
     margin: 2%;
-    padding: 3rem;
-    width: 46%;
+    padding: 4rem;
+    width: 44%;
+  }
+
+  .competitive {
+    clear: right;
+    float: left;
+    width: 45%;
+  }
+
+  .competitive-pic {
+    clear: right;
+    float: right;
+    margin-top: 6rem;
+    width: 40%;
   }
 
   .buttona {
@@ -615,86 +640,73 @@ img {
     width: 40rem;
   }
 
-  .allcompetitve {
-    display: inline-block;
-  }
 
-  .competitive {
-    clear: right;
-    float: left;
-    margin-top: 5rem;
-    padding: 3rem;
-    width: 45%;
-  }
-
-  .competitive-pic {
-    clear: right;
-    float: right;
-    padding-right: 3rem;
-    width: 40%;
-  }
 
   .box {
-    background-color: #3AA695;
     clear: right;
-    color: #FFF1F1;
     float: left;
-    height: 31.5rem;
+    height: 32rem;
     margin-left: 1%;
-    padding: 3rem;
-    width: 30%;
+    width: 31%;
   }
 
-  .usersurvey::after {
-    display: table;
-  }
-
-  .personas-pic {
+  .processpic, .personas-pic {
     clear: left;
     float: left;
     margin: 1rem;
     padding-bottom: 6rem;
-    padding-top: 6rem;
-    width: 45%;
-  }
-
-  .processpic, .flow-pic, .changes, .moodboard {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    width: 55%;
-  }
-
-  .userp {
-    float: right;
-    margin-top: 5rem;
-    padding: 3rem 5rem 3rem 3rem;
     width: 50%;
   }
 
-  .flow, .high, .testing, .brand, .prototype-testing {
+  .flow-pic {
+    float: right;
+    width: 50%;
+  }
+
+  .users {
+    clear: left;
+    float: left;
+    width: 40%;
+  }
+
+
+  .userp, .fi {
+    float: right;
+    width: 35%;
+  }
+
+  .section{
     display: inline-block;
-    padding: 2rem;
+    margin: 8rem 7rem 4rem 7rem;
   }
 
-  .users, .fi, .pref, .dash, .mood, .branding, .clickable, .usertesting {
-    padding: 3rem 20rem 5rem 20rem;
+    .dashboard,.pref, .buttons {
+    float: left;
+    width: 40%
   }
 
-  .dashboard, .landing {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-    text-align: center;
+
+
+ .landing, .dash {
+    float: right;
+    width: 40%;
+  }
+
+  .mood, .branding, .usertesting  {
+    clear: left;
+    float: left;
+    width: 45%;
+  }
+
+  .moodboard, .clickable, .changes {
+    float: right;
+    width: 45%;
   }
 
   .conclusion {
     background-color: #3AA695;
     color: #FFF1F1;
     display: inline-block;
-    margin: 2rem;
-    padding: 10rem 20rem 10rem 20rem;
+    padding: 10rem 22rem 10rem 22rem;
   }
 }

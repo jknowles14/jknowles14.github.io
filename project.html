@@ -7,13 +7,26 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Merriweather Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yeseva+One" />
 </head>
-<div class="topnav">
-  <a href="#contact">Contact</a>
-  <a href="about.html">About</a>
-  <a class="active" href="index.html">Home</a>
+<div class="hero-about">
+  <div class="topnav">
+    <a href="#index" class="active"><img src="images/JK-banner.png" alt="JK logo on teal" class="banner" /></a>
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a class="current" href="project.html">Project</a>
+      <a href="images/j-knowles-resume-19.pdf" download>Resume</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <!-- Hamburger menu -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 </div>
+
 <div class="container">
   <div class="space"></div>
 
@@ -22,44 +35,51 @@
       <div class="title">
         <h3>STACKS CASE STUDY</h3>
       </div>
-      <section>
-        <article class="intro">
-          <p>Stacks is a cloud storage website for the everyday user. For this project, I was a generalist and took on everything from research, user testing, branding design, and UX/UI design. The tools I used were Invision, Figma, Google forms and
-            Usabilityhub. </p>
-        </article>
+      <section class="section">
         <div class="stacks-pic">
           <img src="./images/stacks-folder.png" alt="Stacks screenshot" />
         </div>
+        <article class="intro">
+          <p>Stacks is a cloud storage website for the everyday user. For this project, I was a generalist and took on everything from research, user testing, branding design, and UX/UI design. The tools I used were Invision, Figma, Google forms and
+            Usabilityhub. </p>
+          <div class="prototypebutton">
+            <a href="https://invis.io/CVQJXO3ZX8H" class="buttona">VIEW THE PROTOTYPE</a></div>
+        </article>
       </section>
-      <section>
+      <section class="section">
         <article class="problem">
-          <p>Problem - The client didn’t have a clear vision in mind, but they did want to create a place to save content from the web, organize that content, upload files, and share large files/multiple files. </p>
+          <p> <strong> Problem </strong> - </p>
+            <p> Cloud storages often become cluttered, unorganized and hard to search. It doesn’t help that there are often unnecessary features to make them overly complicated. Additionally, sharing folders or items by
+            link makes your items less secure. You’re forced to choose between security and convenience.  </p>
         </article>
         <article class="solution">
-          <p> Solution - To create a secure space that’s easy to share individual files or whole folders, either by link or email. You also have the option to password protect links. Large files are easy to save and share with up to 10TB of free
-            space, with the option to pay for more space if it’s needed.
+          <p> <strong> Solution </strong> - </p>
+              <p> To create a secure space that’s easy to share individual files or whole folders, either by link or email. You also have the option to password protect links. Large files are easy to save and share with up
+            to 10TB of free space, with the option to pay for more space if it’s needed. Users can also tag items with custom keywords for easy searching.
           </p>
         </article>
-        <article class="prototypebutton">
-          <a href="https://invis.io/CVQJXO3ZX8H" class="buttona">VIEW THE PROTOTYPE</a></article>
+
       </section>
-      <section class="allcompetitve">
+      <section class="section">
         <article class="competitive">
           <h2>Competitive Analysis</h2>
-          <p>I compared Google Drive, Evernote and, Dropbox. This analysis helped me take the best parts of each product to include in my own. Evernote’s ability to tag files for later searches. Google’s large amount of free storage. Dropbox’s
-            streamlined and easy to use service, their ability to share with non-users, and ability to create passwords when sharing. A weakness of one application was a strength for another. </p>
+          <p>Google Drive, Evernote and, Dropbox were analyzed. This analysis was useful to discover the parts of each product that are vital in the design of a cloud storage. Evernote’s ability to tag files for later searches. Google’s large amount
+            of free storage. Dropbox’s streamlined and easy to use service, their ability to share with non-users, and ability to create passwords when sharing. A weakness of one application was a strength for another.</p>
         </article>
         <div class="competitive-pic">
           <img src="./images/competitive-icon-group.png" alt="Google Drive, Evernote and, Dropbox icons" />
         </div>
       </section>
-      <article class="usersurvey">
+      <section class="section">
         <div class="box">
           <h2>User Survey</h2>
           <p> A user survey was created and 100% of those surveyed used Cloud Storage and/or organization websites and applications. Next, I looked at what users liked about the current Cloud storage they were using. </p>
         </div>
         <div class="box">
-          <ul style="list-style-type:circle;"> Cons:
+          <br>
+          <br>
+          <br>
+          <ul style="list-style-type:circle;"> <strong>Cons</strong>:
             <li>Difficult to track what and when things are shared </li>
             <li>Storage space is limited and I don’t like paying for the additional</li>
             <li>It could be hacked</li>
@@ -67,97 +87,107 @@
           </ul>
         </div>
         <div class="box">
-          <ul style="list-style-type:circle;"> Pros:
+          <br>
+          <br>
+          <br>
+          <ul style="list-style-type:circle;"> <strong>Pros</strong>:
             <li> The easy share and modify of documents with teams /clients /friends /family </li>
             <li> Easier send to multiple people</li>
             <li> Easier to send large files</li>
             <li> Information is in one place and accessible from almost anywhere</li>
           </ul>
         </div>
-      </article>
-      <section class="personas">
+      </section>
+      <section class="section">
         <img src="./images/polaroid-personas.png" alt="User personas" class="personas-pic" />
         <div class="userp">
           <h2>User Personas</h2>
-          <p>When comparing personal and work use, over 75% use these products for work and 90% use for personal reasons. The personas synthesized what I’ve learned about the users and how the products could be used in their day-to-day lives. This
+          <p>When comparing personal and work use, over 75% use these products for work and 90% use for personal reasons. The personas synthesized what was learned about the users and how the products could be used in their day-to-day lives. This
             especially useful because the client didn’t have a target audience. </p>
         </div>
       </section>
-      <section class="flow">
+      <section class="section">
         <div class="flow-pic">
           <img src="./images/wireframeandmore.png" alt="User Stories, Flows, and Wireframes" />
         </div>
-        <article class="users">
+        <div class="users">
           <h2>User Stories, Flows, and Wireframes</h2>
-          <p>User stories were needed to help me focus in on the tasks that were important to include in the most viable product and to create User Flows. Then Wireframes were then created to begin the rough design and layout of the website. </p>
-        </article>
+          <p>User stories were needed to help focus in on the tasks that were important to include in the most viable product and to create User Flows. Then Wireframes were then created to begin the rough design and layout of the website. </p>
+        </div>
       </section>
-      <section class="high">
+      <section class="section">
         <div class="processpic">
           <img src="./images/Hi-Fi.png" alt="sketch to High Fidelity Wireframe" />
         </div>
         <article class="fi">
           <h2>High Fidelity Mockups</h2>
-          <p>When working on the High Fidelity Mockups, I realized that my landing page was bare and I needed to extend it and add more information for the user. More buttons were added to give the user more chances to sign up or log in.</p>
+          <p>When working on the High Fidelity Mockups, it became apparent that the landing page was bare and it needed to be longer with more information about the product. More buttons were added to give the user more chances to sign up or log in.</p>
         </article>
       </section>
-      <section class="testing">
+      <section class="section">
+        <article class="pref">
+          <h2>Preference Testing</h2>
+          <p> Preference testing was used to test if the text background images and the hero image for the landing page. For the hero image, 77% of testers preferred the image of the stack of books to
+            the side. Giving reasons like “it's cleaner” and “makes sense with the website’s name”.</p>
+        </article>
         <div class="landing">
           <img src="./images/stacks-landing-preference.png" alt="Landing page before and after" />
         </div>
-        <article class="pref">
-          <h2>Preference Testing</h2>
-          <p> Preference testing to help me decide what worked best for the users. I wanted to make sure that items were still easy to read with an image background or if users prefer no background image on those pages. For the hero image (above),
-            77% of testers preferred the image of the stack of books to the side. Giving reasons like “it's cleaner” and “makes sense with the website’s name”. </p>
+      </section>
+      <section class="section">
+        <article class="dash">
+          <p>For the dashboard, 62% preferred no background image because it was “cleaner”, “less busy”, “easier to read”. Without preference testing, the background image would have been used on the dashboard and folder
+            pages because that’s what I prefer. It was helpful there was a clear winner in all the preference tests. This was reassuring to make choices about what to change. </p>
         </article>
         <div class="dashboard">
           <img src="./images/dashboard-preference.png" alt="dashboard before and after" />
         </div>
-        <article class="dash">
-          <p>For the dashboard (above), 62% preferred that it not have a background image giving reasons like “cleaner”, “less busy”, “easier to read”. Without preference testing, I would have left the background image on the dashboard and the
-            inside a folder pages because that’s what I prefer. Also, the preference test for the hero image helps me feel secure in my choice of image. I
-            was
-            happy that there was a clear winner in all the preference tests. This made me feel confident in the needed changes. </p>
-        </article>
       </section>
-      <section class="brand">
+
+      <section class="section">
         <article class="branding">
           <h2>Branding </h2>
-          <p>The name Stacks came about when thinking of a place you share information and images, like the library, but a library is a serious place and I wanted something more playful than that. The stacks are the back of the library where the
+          <p>The name Stacks came about when thinking of a place you share information and images, like the library, but a library is a serious place and it needed to be more playful than that. The stacks are the back of the library where the
             scientific and architecture books are piled. It’s also a place you might slip off to for a moment alone with someone else for a conversation or something more. It’s a place that’s real but has almost mythic other meaning. </p>
         </article>
         <img src="images/moodboard.jpg" alt="Stacks Moodboard" class="moodboard" />
         <article class="mood">
-          <p> I used a mood board to help me come up with a color scheme. I knew that I wanted it to be colorful like a pile of books usually is. Stacks is blue for intelligence and trustworthiness and its red for passion and creativity. I found
-            further inspiration from a Russian website Creddy that I found on Land-book. It used the colors that I wanted but executed them in a safe way that was less intense than the original colors I had in mind.
+          <p> A moodboard was used to come up with a color scheme. The website is colorful like a pile of books often is. Stacks is blue for intelligence and trustworthiness and its red for passion and creativity. Further inspiration eas found from
+            the Russian Banking website Creddy that was found on Land-book. It used the same colors, but executed them in a safe way that was less intense than the choosen original colors.
           </p>
         </article>
+        <img src="images/logo-evo.png" alt="Stacks Moodboard" class="moodboard" />
+        <article class="mood">
+          <p>The logo is two books intertwined within each other to form an “S”. There was feedback that not everyone sees the “S” shape and it may read as “tacks” so it was changed so the books are next to or above the full “stacks” wording. </p>
+        </article>
       </section>
-      <section class="prototype-testing">
+      <section class="section">
         <article class="clickable">
           <h2>Clickable Prototypes </h2>
-          <p>I created two prototypes, one for a wireframe prototype and a high fidelity prototype. I used inVision to create the two prototypes. </p>
-          <article class="buttons">
-            <a href="https://invis.io/UDQ8N9RJZN4" class="button">WIREFRAME PROTOTYPE</a>
-
-            <a href="https://invis.io/CVQJXO3ZX8H" class="button">HIGH FIDELITY PROTOTYPE</a>
-          </article>
+          <p>Two prototypes were created using inVision, one was a wireframe prototype and the other was a high fidelity prototype. </p>
         </article>
+        <article class="buttons">
+          <a href="https://invis.io/UDQ8N9RJZN4" class="button">WIREFRAME PROTOTYPE</a>
+
+          <a href="https://invis.io/CVQJXO3ZX8H" class="button">HIGH FIDELITY PROTOTYPE</a>
+        </article>
+        </article>
+      </section>
+      <section class="section">
         <img src="./images/usertestingchanges.png" alt="changes after user testing" class="changes" />
         <article class="usertesting">
           <h2>User testing </h2>
-          <p>User testing results showed that the website was easy to navigate. It also revealed what I need to keep or change. I needed to fix how users were adding a tag because 100% of users were confused where the tags were. All three hesitated
-            before using the plus sign to add a tag. Two of the participants tried to add the tag the same way you would add a file. To fix this I decided to make the “Tags” title larger, the tags themselves larger and “+” icon next to the tags
-            larger. Everything was moved up higher too. </p>
+          <p>User testing results showed that the website was easy to navigate. It also revealed what needed to stay or be changed. The tagging screens needs to be fixed because 100% of users didn’t see the tags. All three hesitated before using the
+            plus sign to add a tag. Two of the participants tried to add the tag the same way you would add a file. To fix this the “Tags” title, the tags themselves and “+” icon next to the tags were all made larger. Everything was moved half way
+            up the page too. </p>
         </article>
       </section>
-      <section class="conclusion">
-        <article>
+      <section class="section">
+        <article class="conclusion">
           <h2>Conclusion</h2>
-          <p>From conception to completion Stacks has gone through a lot of changes. Through user testing, I found that the background images I wanted wouldn’t work because it made the files hard to read. I also learned that the way I had created
-            tags
-            was difficult for users to spot. Also, I made changes to the taskbar and some of the layout. I made an adjustment to the fonts that I used and to my logo to make them more stylish and easier to read. Taking a vague concept and turning it
-            into a tangible website was at times overwhelming, but I enjoyed working on Stacks and making something that was easy to use, clean and minimalistic.</p>
+          <p>From conception to completion Stacks has gone through a lot of changes. Through user testing, it was found that the background images wouldn’t work because it made the files hard to read. The design of the tagging ws improved to make it
+            more intuitive. Also, there were changes to to the taskbar and some of the orginal layout. One of the fonts was changed and some edits were made to the logo to make them more stylish and easier to read. Taking a vague concept and turning
+            it into a tangible website was at times overwhelming, but it was enjoyable to work on Stacks and to make a cloud storage design tthat was easy to use, clean and minimalistic.</p>
         </article>
       </section>
 </div>
@@ -174,12 +204,22 @@
 
   gtag('config', 'UA-141456727-1');
 </script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
 
 </body>
 <footer>
   <section class="bottom">
     <div class="connect">
-      <h2 class="footerheading">Let's Connect</h2>
+      <h4 class="footerheading">Let's Connect</h4>
       <ul class="footerlist">
         <li><a href="https://www.linkedin.com/in/julie-knowles/">
             <img src="./images/linkedin2.svg" alt=" linkedin icon" class="icons"></a></li>
