@@ -12,7 +12,7 @@ html {
   position: relative;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
+/* Hides the links inside the navigation menu */
 .topnav #myLinks {
   display: none;
 }
@@ -174,13 +174,11 @@ img {
 }
 
 /* project STACKS CASE STUDY*/
-
 .box {
   clear: right;
   float: none;
   height: auto;
   padding: 2rem;
-  /* width: 96%; */
 }
 
 .conclusion {
@@ -237,12 +235,18 @@ img {
   padding: 3rem;
 }
 
+.stacks-pic {
+  float: none;
+  outline-color: #ECECEC;
+  outline-style: solid;
+  width: 100%;
+}
+
 .section {
   display: inline-block;
   margin: 0 2rem 0 2rem;
   padding: 1rem;
 }
-
 
 .pref, .dash {
   float: none;
@@ -256,17 +260,11 @@ img {
   width: 100%;
 }
 
-.changes, .moodboard, .personas-pic, .processpic {
+.changes, .moodboard, .logo, .personas-pic, .processpic, .stacks-pic, .landing, .flow-pic, .dashboard {
   float: none;
-  padding: 3rem;
-  width: 100%;
-}
-
-.stacks-pic {
-  float: none;
-  outline-color: #ECECEC;
-  outline-style: solid;
-  width: 100%;
+  margin: 4rem 0 4rem 2rem;
+  padding: 0;
+  width: 95%;
 }
 
 .competitive-pic {
@@ -281,11 +279,6 @@ img {
 .stackscase {
   float: left;
   width: 50%;
-}
-
-.stackspic {
-  float: right;
-  width: 40%;
 }
 
 /* ABOUT */
@@ -310,7 +303,6 @@ img {
 }
 
 @media screen and (max-width:1200px) {
-
   .buttons {
     margin-left: auto;
     margin-right: auto;
@@ -342,17 +334,14 @@ img {
     margin: 8rem 6rem 5rem 6rem;
   }
 
-  .stacks, .solo  {
+  .stacks, .solo {
     margin: 0 2rem 0 2rem;
     width: 70%;
   }
 
-
-  .section{
+  .section {
     margin: 3rem 13rem 3rem 4rem;
   }
-
-
 }
 
 @media screen and (min-width:991px) {
@@ -447,7 +436,6 @@ img {
     margin: 6rem 20rem 6rem 20rem;
   }
 
-
   .problem, .solution {
     clear: both;
     float: none;
@@ -455,14 +443,6 @@ img {
     margin: 3%;
     padding: 1.5rem;
     width: 94%;
-  }
-
-
-
-  .changes, .moodboard, .personas-pic, .flow-pic, .processpic {
-    float: none;
-    padding: 4rem;
-    width: 58%;
   }
 
   .usersurvey {
@@ -542,19 +522,19 @@ img {
 
   .beads {
     float: left;
-      padding: 0;
+    padding: 0;
     width: 40%;
   }
 
   .story, .design {
     float: right;
-      padding: 0;
+    padding: 0;
     width: 40%;
   }
 
   .college, .nonprofits {
     float: left;
-      padding: 0;
+    padding: 0;
     width: 50%;
   }
 
@@ -562,11 +542,11 @@ img {
     margin-top: 5rem;
   }
 
-
   /* project STACKS CSE STUDY  */
   .intro {
     clear: right;
     float: right;
+    padding: 3rem 3rem 3rem 0;
     width: 45%;
   }
 
@@ -600,6 +580,7 @@ img {
   .competitive {
     clear: right;
     float: left;
+    padding: 3rem 0 3rem 3rem;
     width: 45%;
   }
 
@@ -640,8 +621,6 @@ img {
     width: 40rem;
   }
 
-
-
   .box {
     clear: right;
     float: left;
@@ -660,45 +639,65 @@ img {
 
   .flow-pic {
     float: right;
+    padding-top: 0;
     width: 50%;
   }
 
   .users {
     clear: left;
     float: left;
+    padding-right: 0;
     width: 40%;
   }
 
+  .pref {
+    clear: left;
+    float: left;
+    padding-right: 0;
+    width: 45%;
+  }
 
   .userp, .fi {
     float: right;
-    width: 35%;
+    padding-left: 0;
+    width: 40%;
   }
 
-  .section{
+  .dash {
+    float: right;
+    padding-left: 0;
+    width: 42%;
+  }
+
+  .section {
     display: inline-block;
     margin: 8rem 7rem 4rem 7rem;
   }
 
-    .dashboard,.pref, .buttons {
+  .buttons {
     float: left;
-    width: 40%
-  }
-
-
-
- .landing, .dash {
-    float: right;
     width: 40%;
   }
 
-  .mood, .branding, .usertesting  {
+  .dashboard {
+    float: left;
+    padding-top: 0;
+    width: 40%
+  }
+
+  .landing {
+    float: right;
+    padding-top: 0;
+    width: 40%;
+  }
+
+  .mood, .branding, .usertesting {
     clear: left;
     float: left;
     width: 45%;
   }
 
-  .moodboard, .clickable, .changes {
+  .moodboard, .clickable, .changes, .logo {
     float: right;
     width: 45%;
   }
