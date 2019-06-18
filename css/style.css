@@ -522,13 +522,13 @@ img {
 
   .beads {
     float: left;
-    padding: 0;
+    padding: 1.4rem 0 0 0;
     width: 40%;
   }
 
   .story, .design {
     float: right;
-    padding: 0;
+    padding: 1rem 0 0 0;
     width: 40%;
   }
 
@@ -552,7 +552,7 @@ img {
 
   .stacks-pic {
     float: left;
-    width: 40%;
+    width: 41%;
   }
 
   .problem {
@@ -581,7 +581,7 @@ img {
     clear: right;
     float: left;
     padding: 3rem 0 3rem 3rem;
-    width: 45%;
+    width: 46%;
   }
 
   .competitive-pic {
@@ -654,7 +654,7 @@ img {
     clear: left;
     float: left;
     padding-right: 0;
-    width: 45%;
+    width: 46%;
   }
 
   .userp, .fi {
@@ -682,7 +682,7 @@ img {
   .dashboard {
     float: left;
     padding-top: 0;
-    width: 40%
+    width: 42%
   }
 
   .landing {
