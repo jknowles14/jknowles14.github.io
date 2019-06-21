@@ -339,8 +339,12 @@ img {
     width: 70%;
   }
 
+  .personas-pic, .moodboard, .logo, .changes, .stacks-pic {
+    width: 80%;
+  }
+
   .section {
-    margin: 3rem 15rem 3rem 15rem;
+    margin: 3rem 10rem 3rem 10rem;
   }
 }
 
@@ -634,13 +638,14 @@ img {
     float: left;
     margin: 1rem;
     padding-bottom: 6rem;
-    width: 50%;
+    padding-top: 1rem;
+    width: 45%;
   }
 
   .flow-pic {
     float: right;
     padding-top: 0;
-    width: 50%;
+    width: 40%;
   }
 
   .users {
@@ -660,12 +665,13 @@ img {
   .userp, .fi {
     float: right;
     padding-left: 0;
-    width: 40%;
+    width: 43%;
   }
 
   .dash {
     float: right;
     padding-left: 0;
+    margin-top: 1rem;
     width: 42%;
   }
 
