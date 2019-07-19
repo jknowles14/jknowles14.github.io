@@ -73,6 +73,11 @@ h4 {
   line-height: 4rem;
 }
 
+h5{
+  font-size: 2rem;
+  color: #39858F;
+}
+
 strong {
   font-size: 1.8rem;
   font-weight: bold;
@@ -110,19 +115,17 @@ img {
 }
 
 /* index HOME PAGE  */
-.stacksec, .solosec {
+.featuredsec, .solosec {
   margin: 7rem 3rem 5rem 3rem;
 }
 
-.stackstext, .solotext {
+.featured, .solotext {
   padding: 1rem;
   margin: 2rem 1rem 2.5rem 1rem;
 }
 
-.stacks, .solo {
+.featuredpic, .solo {
   margin: 5rem 2rem 5rem 2rem;
-  outline-color: #ECECEC;
-  outline-style: solid;
   width: 85%;
 }
 
@@ -178,8 +181,10 @@ img {
   clear: right;
   float: none;
   height: auto;
+  list-style-position: inside;
   padding: 2rem;
 }
+
 
 .conclusion {
   background-color: #3AA695;
@@ -196,6 +201,7 @@ img {
   padding: 3rem;
   width: 96%;
 }
+
 
 .button {
   border: 2px solid #3AA695;
@@ -237,8 +243,6 @@ img {
 
 .stacks-pic {
   float: none;
-  outline-color: #ECECEC;
-  outline-style: solid;
   width: 100%;
 }
 
@@ -325,21 +329,21 @@ img {
   }
 
   .title {
-    padding-left: 6rem;
-    padding-right: 1rem;
+    padding-left: 8rem;
+    padding-right: 3rem;
   }
 
-  .stacksec, .solosec {
+  .featuredsec, .solosec {
     display: inline-block;
     margin: 8rem 6rem 5rem 6rem;
   }
 
-  .stacks, .solo {
+  .featuredpic, .solo {
     margin: 0 2rem 0 2rem;
     width: 70%;
   }
 
-  .personas-pic, .moodboard, .logo, .changes, .stacks-pic {
+  .personas-pic, .moodboard, .logo, .changes, .stacks-pic, .landing, .dashboard {
     width: 80%;
   }
 
@@ -383,27 +387,27 @@ img {
     float: left;
   }
 
-  .stackstext {
+  .featured {
     float: left;
     margin: 2rem 0 1rem 4.5rem;
     width: 40%;
   }
 
-  .stacksec, .solosec {
+  .featuredsec, .solosec {
     display: inline-block;
     margin: 8rem 5rem 5rem 5rem;
   }
 
-  .stacks {
+  .featuredpic {
     float: right;
-    margin: 3rem 7rem 10rem 0;
-    width: 35%;
+    margin: 5rem;
+    width: 50%;
   }
 
   .solo {
     clear: left;
     float: left;
-    margin-top: 5rem;
+    margin: 5rem;
     width: 50%;
   }
 
@@ -474,28 +478,28 @@ img {
     margin-left: 9.7rem;
   }
 
-  .stackstext {
+  .featured {
     float: left;
     margin: 2rem 0 1rem 4.5rem;
     width: 40%;
   }
 
-  .stacksec, .solosec {
+  .featuredsec, .solosec {
     display: inline-block;
     margin: 8rem 5rem 5rem 5rem;
   }
 
-  .stacks {
+  .featuredpic {
     float: right;
     margin: 3rem 7rem 10rem 0;
-    width: 35%;
+    width: 43%;
   }
 
   .solo {
     clear: left;
     float: left;
-    margin-top: 5rem;
-    width: 50%;
+    margin: 2rem 0 0 5rem;
+    width: 38%;
   }
 
   .solotext {
@@ -556,7 +560,7 @@ img {
 
   .stacks-pic {
     float: left;
-    width: 41%;
+    width: 45%;
   }
 
   .problem {
@@ -705,7 +709,7 @@ img {
 
   .moodboard, .clickable, .changes, .logo {
     float: right;
-    width: 45%;
+    width: 40%;
   }
 
   .conclusion {
