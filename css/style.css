@@ -44,7 +44,7 @@ a.current:link, a.current:visited {
 /*** typography ***/
 p, ul {
   font-family: 'Merriweather Sans';
-  size: 1rem;
+  font-size: 1.5rem;
   line-height: 2.3rem;
 }
 
