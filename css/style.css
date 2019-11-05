@@ -119,14 +119,23 @@ img {
   margin: 7rem 3rem 5rem 3rem;
 }
 
+.thirdsec {
+  margin: 7rem 4rem 5rem 3rem;
+}
+
 .featured, .solotext {
   padding: 1rem;
   margin: 2rem 1rem 2.5rem 1rem;
 }
 
-.featuredpic, .solo {
-  margin: 5rem 2rem 5rem 2rem;
+.featuredpic, .solo{
+  margin: 5rem 2rem 3rem 2rem;
   width: 85%;
+}
+
+.thirdpic {
+  margin: 1rem 2rem 3rem 2rem;
+  width: 30%;
 }
 
 .title {
@@ -192,7 +201,7 @@ img {
   float: none;
   height: auto;
   list-style-position: inside;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 
@@ -211,6 +220,8 @@ img {
   padding: 3rem;
   width: 96%;
 }
+
+
 
 
 .button {
@@ -297,6 +308,14 @@ img {
   width: 95%;
 }
 
+.busybus-pic{
+  float: none;
+  margin: 2rem auto 0 auto;
+  /* padding-left: 5rem; */
+  width: 70%;
+}
+
+
 .competitive-pic {
   margin: 4rem auto 0 auto;
   width: 50%;
@@ -310,6 +329,10 @@ img {
   float: left;
   width: 50%;
 }
+
+/* third  */
+
+
 
 /* ABOUT */
 .river {
@@ -359,7 +382,7 @@ img {
     padding-right: 3rem;
   }
 
-  .featuredsec, .solosec {
+  .featuredsec, .solosec, .thirdsec  {
     display: inline-block;
     margin: 8rem 6rem 5rem 6rem;
   }
@@ -373,10 +396,14 @@ img {
     width: 80%;
   }
 
-  .section {
+  .section  {
     margin: 3rem 10rem 3rem 10rem;
   }
-
+  .busybus-pic{
+    float: left;
+    margin-left: 4rem;
+    width: 50%;
+  }
 }
 
 @media screen and (min-width:991px) {
@@ -420,7 +447,7 @@ img {
     width: 40%;
   }
 
-  .featuredsec, .solosec {
+  .featuredsec, .solosec, .thirdsec  {
     display: inline-block;
     margin: 8rem 5rem 5rem 5rem;
   }
@@ -437,6 +464,12 @@ img {
     margin: 5rem;
     width: 50%;
   }
+
+   .thirdpic {
+      float: right;
+      margin: 5rem;
+      width: 30%;
+    }
 
   .solotext {
     float: right;
@@ -513,13 +546,25 @@ img {
 
   .featuredsec, .solosec {
     display: inline-block;
-    margin: 8rem 5rem 5rem 5rem;
+    margin: 8rem 5rem 8rem 5rem;
+  }
+
+ .thirdsec {
+    display: inline-block;
+    margin: 15rem 5rem 8rem 5rem;
   }
 
   .featuredpic {
     float: right;
     margin: 3rem 7rem 10rem 0;
     width: 43%;
+  }
+
+ .thirdpic {
+    float: right;
+    /* margin: 5rem 0rem 10rem 0rem; */
+    margin-right: 15rem;
+    width: 18%;
   }
 
   .solo {
@@ -590,6 +635,11 @@ img {
   .stacks-pic {
     float: left;
     width: 45%;
+  }
+
+  .busybus-pic {
+  float: left;
+   width: 25%;
   }
 
   .problem {
@@ -663,8 +713,9 @@ img {
     float: left;
     height: 32rem;
     margin-left: 1%;
-    width: 31%;
+    width: 32%;
   }
+
 
   .processpic, .personas-pic {
     clear: left;
@@ -703,8 +754,8 @@ img {
 
   .dash {
     float: right;
-    padding-left: 0;
     margin-top: 1rem;
+    padding-left: 0;
     width: 42%;
   }
 
@@ -747,4 +798,5 @@ img {
     display: inline-block;
     padding: 10rem 22rem 10rem 22rem;
   }
+
 }
