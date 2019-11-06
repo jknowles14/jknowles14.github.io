@@ -74,8 +74,8 @@ h4 {
 }
 
 h5 {
-  font-size: 2rem;
   color: #39858F;
+  font-size: 2rem;
 }
 
 strong {
@@ -474,7 +474,7 @@ img {
     background-color: #39858F;
     color: #FFF1F1;
     margin: 8rem 0 3rem 0;
-    padding-top: 2.5rem 0 2.5rem 4rem;
+    padding: 2.5rem 0 2.5rem 4rem;
     text-align: center;
     width: 40rem;
   }
